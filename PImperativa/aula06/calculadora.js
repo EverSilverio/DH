@@ -32,12 +32,12 @@ function dividir(a, b) {
 
 // Crie um console.log no qual você irá colocar uma string para indicar que abaixo dela você começará a testar as funções, por exemplo:
 // console.log ("-------------- Teste de Operações / Calculadora --------------")
-console.log ("-------------- Teste de Operações / Calculadora --------------");
+console.log("-------------- Teste de Operações / Calculadora --------------");
 
 // Execute a função que soma e a função que subtrai, passando quaisquer dois números como argumentos. Mostrar resultados no console.
 var a1 = 5;
 var b1 = 2;
-var adicao = adicionar(a1,b1);
+var adicao = adicionar(a1, b1);
 console.log("A soma de " + a1 + " + " + b1 + " = " + adicao);
 
 var a2 = 8;
@@ -95,27 +95,26 @@ var num1 = 9;
 var num2 = 8;
 var num3 = 7;
 var media = mediaDeTresNumeros(num1, num2, num3);
-console.log("A média de (" + num1 + ", " +  num2 + ", " + num3 + ") é " + media);
-
+console.log("A média de (" + num1 + ", " + num2 + ", " + num3 + ") é " + media);
 
 // Crie a função calculaPorcentagem, que receberá dois parâmetros: o número total e a porcentagem que deseja calcular, e que deverá retornar x% de totalPorcentagem.
 function calculaPorcentagem(total, percentual) {
-    var valorPorcentagem = total * (percentual / 100);
+    var valorPorcentagem = multiplicar(total, (dividir(percentual,100)));
     return valorPorcentagem;
 }
 
 var c1 = 200;
 var c2 = 20;
-var valorPer = calculaPorcentagem(c1,c2);
+var valorPer = calculaPorcentagem(c1, c2);
 
 console.log(c2 + "% de " + c1 + " é " + valorPer);
 
 // Crie uma função geradorDePorcentagem que leva dois parâmetros, e que deverá retornar a porcentagem do primeiro em relação ao segundo parâmetro.
 function geradorDePorcentagem(a, b) {
-    var valor = a / b * 100;
+    var valor = multiplicar(dividir(a,b),100);
     return valor;
 }
 var p1 = 9;
 var p2 = 90;
-var porcentagem = geradorDePorcentagem(p1,p2);
+var porcentagem = geradorDePorcentagem(p1, p2);
 console.log(p1 + " representa " + porcentagem + "% de " + p2);
