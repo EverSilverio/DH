@@ -1,3 +1,8 @@
+/***
+ * mais sobre spread sintax: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+ * mais sobre método join(): https://www.w3schools.com/jsref/jsref_join.asp
+ * mais sobre loops com "for": https://www.w3schools.com/jsref/jsref_for.asp
+ */
 /* 
 * Calculadora - Nível I 
 */
@@ -98,7 +103,6 @@ console.log(
 // funcao media (deve utilizar funcoes adicionar e dividir)
 function media(...numeros) {
     var soma = adicionar(...numeros);
-    
     return dividir(soma, numeros.length)
 }
 
