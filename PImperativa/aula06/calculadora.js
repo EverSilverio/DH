@@ -25,7 +25,7 @@ function subtrair(...numeros) {
     return resultado;
 }
 
-// funcção multiplicar
+// função multiplicar
 function multiplicar(...numeros) {
     var resultado = 1;  // inicia resultado como 1
     for (var i = 0; i < numeros.length; i++) {
