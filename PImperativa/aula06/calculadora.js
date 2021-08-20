@@ -66,7 +66,6 @@ console.log(
     "A divisão de " + numeros.join(" ÷ ") + " = " +  dividir(...numeros)
 );
 
-
 // Execute a função que faz divisão, passando agora o número zero como um dos dois argumentos.
 numeros = [50, 0]
 console.log(
