@@ -46,7 +46,7 @@ function dividir(...numeros) {
 console.log("-------------- Teste de Operações / Calculadora --------------");
 var numeros = []; //inicia lista de numeros vazia
 
-// Execute a função que soma e a função que subtrai, passando quaisquer dois números como argumentos. Mostrar resultados no console.
+// Executar a função que soma e a função que subtrai, passando quaisquer números como argumentos
 numeros = [13, 2, 3, 6];
 
 // executa adicionar()
@@ -65,13 +65,13 @@ console.log(
     "A multiplicação de " + numeros.join(" x ") + " = " + multiplicar(...numeros)
 );
 
-// Execute a função que faz divisão, passando quaisquer dois números como argumentos. Mostre o resultado no console.
+// Execute a função que faz divisão, passando quaisquer números como argumentos
 numeros = [50, 2, 5]
 console.log(
     "A divisão de " + numeros.join(" ÷ ") + " = " +  dividir(...numeros)
 );
 
-// Execute a função que faz divisão, passando agora o número zero como um dos dois argumentos.
+// Execute a função que faz divisão, passando agora o número zero como um dos argumentos.
 numeros = [50, 0]
 console.log(
     "A divisão de " + numeros.join(" ÷ ") + " = " +  dividir(...numeros)
@@ -86,7 +86,7 @@ console.log(
 * Calculadora - Nível III
 */
 
-// Função chamada potencia, recebe numero e expoente  (deve utilizar funcao multiplicar)
+// Função potencia, recebe numero e expoente (deve utilizar funcao multiplicar)
 function potencia(numero, expoente) {
    var resultado = 1;
    for (var i = 0; i < expoente; i++) {
