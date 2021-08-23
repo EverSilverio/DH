@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap');
+
+* {
+    font-family: Poppins, sans-serif;
+    font-size:14px;
+    margin: 0;
+}    
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: #705E78;
+    font-size: 2rem;
+    padding-bottom: 10px;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.header{
+    background-image: url("../img/bolo_cenoura.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    box-sizing:border-box;
+    height: 400px;
+}
+
+.header__container {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items:flex-end;
+    width: 100%;
+}
+
+.header nav {
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;;
+    height: 180px;
+    width:100%;
+    background-color: rgb(129, 47, 31, 35%);
+}
+
+.header__items {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 900px;
+}
+
+
+.header h1 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 60px;
+    color: #FFFFFF;
+    align-self: center;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    width: 65%;
+    min-width: 450px;
+    height: 100%;
+}
+
+.header__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;    
+    padding-left: 10px;
+    width: 35%;
+}
+
+.header__share-save {
+    display: flex;
+    box-sizing: border-box;
+    flex: 1;
+    justify-content: flex-end;
+    padding-right: 10px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.header__share, .header__save, .header__share a, .header__save a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    height: 50px;
+}
+
+.header__share {
+    border-right: 3px solid #fff;
+    padding-right: 50px;
+}
+
+.header__save {
+    padding-left: 20px;
+}
+
+.header_time-people{
+    display: flex;
+    flex: 1;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    align-self: flex-end;
+    width: 100%;
+}
+
+.header__time, .header__people {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255, 40%);
+    color: #fff;
+    border-radius: 8px;
+    padding: 5px;
+    height: 40px;
+    align-self: flex-end;
+    margin-right: 10px;
+    margin-bottom: 5px;;
+}
+
+.header__info {
+    font-weight:300;
+    font-size:13px;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    
+}
+
+.header__time img, .header__people img, .header__share img, .header__save img {
+    padding-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.detail {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #812F33;
+    width: 100%;
+    color: white;
+}
+
+.detail__item {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    max-width: 900px;
+    line-height: 1.8rem;
+    padding: 20px;;
+}
+
+.container {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.container__item{
+    text-align: center;
+    padding-bottom: 20px;
+    line-height: 1.8rem;
+
+}
+
+ol, ul {
+    list-style-position: inside;
+}
+
+ul {
+    list-style-type: square;
+}
+
+footer {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    font-size:16px;
+    background-color: #FEA443;
+    height:50px;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
