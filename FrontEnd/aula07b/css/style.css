@@ -1,0 +1,22 @@
+body {
+    background-color: rgba(223, 215, 185);
+    color: rgba(51, 51, 51);
+}
+
+h1{
+    color: #0d1b97;
+}
+
+.job-title{
+    background-color: #1726ad;
+    color: #898dbe;
+}
+
+#high {
+    color: rgba(13, 27, 151);
+}
+
+ul {
+    background-color: #333333;
+    color: rgba(223, 215, 185)
+}
