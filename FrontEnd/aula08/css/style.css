@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); 
+
+body {
+    background-color: #131313;
+}
+
+h1{
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    color: white;
+}
+
+h2{
+    color: steelblue;
+}
+
+a {
+    color: yellow;
+}
+
+p{
+    color: #bdbdbd;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.media-picture{
+    width: 100%;
+    height: 400px;
+    background-image: url("https://www.teahub.io/photos/full/27-278528_pulp-fiction-wallpaper-poster.jpg");
+    background-size: cover;
+}
+
+.review-score  {
+    padding: 12px;
+    color: white;
+    background-color: #e6bd09;
+}
