@@ -31,9 +31,14 @@ Isso não ocorrerá somente na classe video-title, ela foi apenas um exemplo.
 ## Conclusão
 Parabéns! Você acaba de concluir uma limpeza em nossa página HTML, é ideal que na maioria das vezes o CSS sempre seja utilizado de maneira Externa para manter um padrão mais organizado em nosso projeto, onde cada arquivo é responsável somente por uma coisa, no caso do HTML marcar o nosso conteúdo e do CSS de deixar o nosso conteúdo mais agradavel.
 
+## Solução  
+  
 ### Antes  
 [index.html com css inline](https://github.com/EverSilverio/DH/blob/master/FrontEnd/aula09/index_old.html)
 
 ### Depois
-[index.html sem css inline](https://github.com/EverSilverio/DH/blob/master/FrontEnd/aula09/index.html)
-[style.css externo](https://github.com/EverSilverio/DH/blob/master/FrontEnd/aula09/style.css)
+Ver código do [index.html sem css inline](https://github.com/EverSilverio/DH/blob/master/FrontEnd/aula09/index.html)
+  
+Ver código do [style.css externo](https://github.com/EverSilverio/DH/blob/master/FrontEnd/aula09/style.css)
+  
+Veja o [Preview da página](https://htmlpreview.github.io/?https://github.com/EverSilverio/DH/blob/master/FrontEnd/aula09/index.html)
