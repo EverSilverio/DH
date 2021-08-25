@@ -16,3 +16,7 @@ Olá, você foi contratado para executar este projeto. É importante que você a
 - Opções não listadas no menu, devem exibir uma mensagem de erro: "Prato inexistente";
 - Se o tempo for 3x maior que o necessário para o prato, o microondas deve exibir a mensagem: “kabumm”;
 - No final de cada tarefa, o microondas deverá exibir a mensagem: "Prato pronto, bom apetite!!!".
+
+### Solução exercício:
+[microondas.js](https://github.com/EverSilverio/DH/blob/master/PImperativa/checkpoint_1/microondas.js)
+
