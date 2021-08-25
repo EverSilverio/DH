@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); 
 
-body {
+/* body {
     background-color: #131313;
-}
+} */
 
 h1{
     font-family: Roboto, "Helvetica Neue", sans-serif;
@@ -34,3 +34,17 @@ p{
     color: white;
     background-color: #e6bd09;
 }
+
+body {
+    background-image: url("../img/cinema-with-popcorn-box.jpg"),
+        linear-gradient(rgba(19,19,19,1), rgba(0,0,5,1), rgba(0,0,5,1));
+     background-repeat: no-repeat;
+    background-size: contain;
+    background-position:bottom;
+}
+
+footer {
+    padding-top:15%;
+    height:150px;
+}
+
