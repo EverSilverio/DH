@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Microondas</title>
+</head>
+
+<body>
+    <header>
+        <h1>Microondas</h1>
+    </header>
+
+    <section class="container">
+        <section class="comidas">
+            <p>Opções disponíveis:</p>
+            <ul>
+                <li>Pipoca – 10 segundos (padrão)</li>
+                <li>Macarrão – 8 segundos (padrão)</li>
+                <li>Carne – 15 segundos (padrão)</li>
+                <li>Feijão – 12 segundos (padrão)</li>
+                <li>Brigadeiro – 8 segundos (padrão)</li>
+            </ul>
+        </section>
+        <div class="form">
+            <div class="form__field">
+                <label>Comida</label>
+                <input id="comida" type="text" placeholder="Informe qual refeição irá preparar">
+            </div>
+            <div class="form__field">
+                <label>Tempo (em segundos)</label>
+                <input id="tempo" type="text" placeholder="Informe o tempo de preparo">
+            </div>
+            <div class="button-group">
+                <div onclick="clickLigarMicroondas()" class="btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path d="M3 22v-20l18 10-18 10z"/></svg> 
+                    <span>Ligar </span>
+                </div>
+                <div onclick="desligarMicroondas()" class="btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 16.538l-4.592-4.548 4.546-4.587-1.416-1.403-4.545 4.589-4.588-4.543-1.405 1.405 4.593 4.552-4.547 4.592 1.405 1.405 4.555-4.596 4.591 4.55 1.403-1.416z"/></svg>
+                    <span>Desligar </span>
+                </div>
+    
+            </div>
+
+            <div class="result">
+                <span id="display">Microondas desligado...</span>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+<script src="scripts.js"></script>
+
+</html>
