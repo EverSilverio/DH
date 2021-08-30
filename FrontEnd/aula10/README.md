@@ -12,7 +12,7 @@
 4. Dê uma largura e altura para a mesma
 5. Adicione um título para o seu banner h1
 6. Adicione um subtítulo para o banner também h2
-7. Crie um botão a partir da tag <a href=”#”><button>Meu botão</button></a>
+7. Crie um botão a partir da tag ```<a href=”#”><button>Meu botão</button></a>```
 8. Dê uma altura e uma largura usando apenas o box-model
 9. Dê uma borda arredondada
 10. Escolha uma cor bem bacana
