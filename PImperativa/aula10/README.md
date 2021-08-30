@@ -126,7 +126,7 @@ console.log(str.replace("Python", "Javascript"))
 
 ### Arrays
 
-Arquivo: [arrays.js](https://github.com/)
+Arquivo: [aula10/funcoes-array.js](https://github.com/EverSilverio/DH/blob/master/PImperativa/aula10/funcoes-array.js)
 
 Posições / Tamanhos / Manipulação
 
