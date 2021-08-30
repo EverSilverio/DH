@@ -14,6 +14,7 @@ body {
 h1, h2 {
     text-shadow: black 0.1em 0.1em 0.2em;
     color: white;
+    text-align: center;
 }
 
 h1 {
@@ -29,7 +30,7 @@ h2 {
 #banner {
     box-sizing: border-box;
     background-image: url(banner.jpg);
-    background-repeat: no-repeat;
+    background-size: cover;
     width: 1280px;
     height: 720px;
 }
