@@ -1,5 +1,4 @@
-# DH
-## Digital House - Certified Tech Developer [2021-2023]
+# Digital House - Certified Tech Developer [2021-2023]
 
 >_O Mercado Livre e a Globant apresentam Certified Tech Developer, um programa desenvolvido em conjunto com a Digital House para capacitação profissional na indústria de tecnologia na América Latina._ [[saiba mais]](https://certifiedtechdeveloper.com.br)
 
@@ -14,3 +13,5 @@ Nesse repositório serão adicionados os exercícios, testes e evoluções duran
 [![Certified Tech Developer](https://certifiedtechdeveloper.com.br/wp-content/uploads/2021/01/CertifiedTechDeveloper-1200x340.png)](https://certifiedtechdeveloper.com.br/)
 
 [![CTD](https://certifiedtechdeveloper.com.br/wp-content/uploads/2021/01/de_MercadoLivre_e_Globant_por_DigitalHouse_footer-1200x153.png)](https://certifiedtechdeveloper.com.br/)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/eversilverio/)
