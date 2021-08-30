@@ -157,7 +157,7 @@ Posições / Tamanhos / Manipulação
 
 __O laço For__
 
-O For possuie a seguinte sintax:
+O For possui a seguinte sintax:
 
 ```javascript
 for (Parâmetro 1; Parâmetro 2; Parâmetro 3) {
@@ -171,6 +171,7 @@ Parâmetro 2 define a condição para executar o bloco de código
 
 Parâmetro 3 é executado (todas as vezes) após a execução do bloco de código.
 
+Exemplo:
 ```javascript
 // será iniciado o i = 0
 // o loop será executado enquanto o i for menor que array.length (tamanho do array)
