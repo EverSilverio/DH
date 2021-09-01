@@ -16,3 +16,17 @@
 7. Abaixo do vídeo escreva o título: “Curiosidades” e logo abaixo faça uma pequena lista com algumas curiosidades da sua cidade.
 8. Utilize algum site de ícones para conseguir uma imagem do instagram e outra do youtube. Nesses ícones, faça o link com os canais oficiais da sua cidade, se não houver, coloque links do seu gosto.
 9. No formulário a seguir, insira seu nome e link do repositório remoto com o trabalho: https://forms.gle/ySxcyFd5qcHFiJtf6
+
+---
+
+## SOLUÇÃO (Responsive)
+
+Clique para ver um [Preview](https://htmlpreview.github.io/?https://github.com/EverSilverio/DH/blob/master/FrontEnd/checkpoint1/index.html)
+
+## Sample Mobile
+<img src="https://raw.githubusercontent.com/EverSilverio/DH/master/FrontEnd/checkpoint1/sample_mobile.jpeg" alt="Sample Mobile" width="350"/>
+
+## Sample Desktop
+<img src="https://raw.githubusercontent.com/EverSilverio/DH/master/FrontEnd/checkpoint1/sample_pc.jpg" alt="Sample Mobile" width="100%"/>
+
+
