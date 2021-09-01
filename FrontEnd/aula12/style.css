@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins, Helvetica, sans-serif;
+}
+
+body {
+    background: url("img/wp.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 150vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+button a {
+    color: black;
+    font-weight: 600;
+}
+
+li {
+    list-style: none;
+    display: inline;
+    padding-left: 25px;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    background-color:black;
+    padding: 20px 10px;
+    z-index: 2;
+}
+
+.logo a {
+    color: white;
+    font-family: "Dancing Script", "Helvetica Neue", Helvetica, Arial;
+    font-size: 30px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color:yellow;
+}
+
+.breadcrumbs {
+    position: absolute;
+    top:80px;
+    left: 10px;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.3em;
+}
+
+.breadcrumbs a {
+    color: white;
+}
+
+.content {
+    position: absolute;
+    width: 70%;
+    top:130px;
+    transform: translateX(25%);
+    color: gree;
+    text-shadow: black 0.1em 0.1em 0.3em;
+    background-color: rgba(255,255,255,0.2);
+    text-align: center;
+}
+
+.content p {
+    padding: 20px 50px;
+
+}
+
+.fa {
+    color:white;
+    text-shadow: black 0.1em 0.1em 0.3em;
+    font-size: 60px;
+}
+
+footer {
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+}
