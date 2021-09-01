@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+div {
+    border: 1px solid black;
+}
+
+.left, .right, .center {
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    display: inline-block;
+}
+
+.right {
+    position: absolute;
+    right: 0;
+}
+.left {
+    position: absolute;
+    left: 0;
+}
+
+.center {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.left__item, .right__item, .center__item{
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, 50%);
+    height: 100px;
+    width: 100px;
+}
+
+p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+}
