@@ -11,7 +11,7 @@
 }
 
 body {
-    background: url("../img/curitiba.jpg") no-repeat center center fixed;
+    background: url("../curitiba.jpg") no-repeat center center fixed;
     background-size: cover;
     font-size:20px;
     /*
