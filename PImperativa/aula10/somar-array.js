@@ -20,8 +20,8 @@ console.log(somarArray([2 ,4, -2, 10]));
 // utilizando loop for
 function somarArray0(arr) {
     let result = 0;
-    for (let item = 0; item < array.length; item++) {
-        result += array[item];
+    for (let item = 0; item < arr.length; item++) {
+        result += arr[item];
     }
 
     return result;
