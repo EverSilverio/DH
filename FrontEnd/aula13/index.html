@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <main class="content">
+        <nav class="menu">
+            <div class="menu__logo">
+                <img src="img/logo.png" alt="logo compania">
+            </div>
+            <div class="menu__welcome">
+                <p>Olá, seja bem vindo(a)!</p>
+                <p>Preencha o Formulário.</p>
+            </div>
+        </nav>
+        <section class="form-content">
+            <h1 class="form-content__title">Formulário</h1>
+            <form class="form-content__form" action="index.html" method="post">
+                <input class="form-content__field input" type="text" name="nome" id="nome" placeholder="Nome">
+                <input class="form-content__field input" type="text" name="email" id="email" placeholder="Email">
+                <select class="form-content__field select" name="areas" id="areas">
+                    <label for="areas">Área de Desenvolvimento</label>
+                    <option>Selecione a área de desenvolvimento desejada</option>
+                    <option>FrontEnd</option>
+                    <option>BackEnd</option>
+                    <option>FullStack</option>
+                </select>
+                <textarea class="form-content__field textarea" name="skill" id="skill" cols="30" rows="10" placeholder="Descreva sobre seu conhecimento em programação"></textarea>
+                <div class="form-content__buttons">
+                    <button class="form-content__field btn btn--reset" type="reset">Limpar Campos</button>
+                    <button class="form-content__field btn" type="submit">Cadastrar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>

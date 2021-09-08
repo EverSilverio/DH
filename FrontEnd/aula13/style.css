@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Poppins, Helvetica, sans-serif;
+}
+
+body {
+    background: url(img/background.jpg) center center fixed;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(170,57,57,.5);
+}
+
+.content {
+    display:inline-flex;
+    width: 100%;
+}
+
+.menu {
+    display: block;
+    width: 240px;
+    height: 100vh;
+    
+    background: #FFCCCC;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.menu__logo {
+    height: 75%;
+}
+
+.menu__logo img {
+    width: 100%;
+}
+
+.menu__welcome {
+    text-align: center;
+    color: #7D1313;
+    font-weight: bold;
+}
+
+.form-content {
+    position: relative;
+    width: 65%;
+    left: 5%;
+
+    padding: 30px;
+    margin: 50px 0;
+
+    text-align: center;
+
+    border: 1px solid #7D1313;
+    border-radius: 8px;
+}
+
+.form-content__title {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.form-content__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-content__field {
+    height: 45px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    border-radius: 8px;
+    color: #7D1313;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-content__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form-content__field.input, .form-content__field.select, .form-content__field.textarea {
+    background-color: #FCA5A5;
+}
+
+.form-content__field.input:focus, .form-content__field.select:focus, .form-content__field.textarea:focus {
+    outline: none !important;
+    border:1px solid #550000;
+    box-shadow: 0 0 10px #801515;
+}
+
+.form-content__field.btn {
+    background-color: #7D1313;
+    color: white;
+    border-radius:8px;
+    width: 48%;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.form-content__field.btn--reset {
+    background-color: #D46A6A;
+}
+
+.form-content__field.btn:hover {
+    background-color: #550000;
+    box-shadow: 0 0 10px #801515;
+}
+
+.form-content__field.btn--reset:hover {
+    background-color: #AA3939;
+    box-shadow: 0 0 10px #801515;
+}
+
+.form-content__field.textarea {
+    height: 120px;
+    padding-top: 10px;
+}
+
+.form-content__field.select {
+    cursor: pointer;
+}
