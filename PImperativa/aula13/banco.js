@@ -75,11 +75,6 @@ banco.saque('Alonso Wannan', 1000);
 * Você deve criar uma função chamada propriedadeUnica que recebe uma array de objetos como parâmetro e uma string.  Você deve devolver um novo array de objetos, tendo apenas a propriedade que foi passada como string.  
 */
 
-let arr = [
-  {nome:'Leon', idade:27},
-  {nome:'Eze', idade:49}
-] 
-
 function propriedadeUnica(arr, prop) {
   let aux = [];
   for(i in arr) {
@@ -88,4 +83,4 @@ function propriedadeUnica(arr, prop) {
   console.log(aux)
 } 
 
-propriedadeUnica(arr, 'idade')
+propriedadeUnica(banco.clientes, 'titular')
