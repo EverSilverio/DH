@@ -71,9 +71,11 @@ let banco = {
 banco.deposito('Alonso Wannan', 1000);
 banco.saque("Alonso Wannan", 1001);
 
-// bonus
 /**
-* Você deve criar uma função chamada propriedadeUnica que recebe uma array de objetos como parâmetro e uma string.  Você deve devolver um novo array de objetos, tendo apenas a propriedade que foi passada como string.  
+* BONUS
+* Você deve criar uma função chamada propriedadeUnica que recebe uma array de objetos 
+* como parâmetro e uma string.  Você deve devolver um novo array de objetos, tendo apenas 
+* a propriedade que foi passada como string.  
 */
 
 function propriedadeUnica(arr, prop) {
