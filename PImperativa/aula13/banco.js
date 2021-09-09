@@ -68,7 +68,8 @@ let banco = {
     }
 };
 
-banco.saque('Alonso Wannan', 1000);
+banco.deposito('Alonso Wannan', 1000);
+banco.saque("Alonso Wannan", 1001);
 
 // bonus
 /**
