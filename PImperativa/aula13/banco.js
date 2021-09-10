@@ -6,8 +6,7 @@
        saldo: number, decimal
        titular: string (nome completo)
    }
- */
-
+*/
 
 const correntista = function (nroConta, tipoConta, saldo, titular) {
     this.nro_conta = nroConta;
@@ -16,18 +15,18 @@ const correntista = function (nroConta, tipoConta, saldo, titular) {
     this.titular = titular;
 }
 
-let correntistas = [];
-
-correntistas.push(new correntista(5486273622, 'Conta Corrente', 27771, 'Abigael Natte'));
-correntistas.push(new correntista(1183971869, 'Conta Poupança', 8675, 'Ramon Connell'));
-correntistas.push(new correntista(9582019689, 'Conta Poupança', 27363, 'Jarret ente'));
-correntistas.push(new correntista(1761924656, 'Conta Poupança', 32415, 'Ansel Ardley'));
-correntistas.push(new correntista(7401971607, 'Conta Poupança', 18789, 'Jacki Shurmer'));
-correntistas.push(new correntista(630841470, 'Conta Corrente', 28776, 'Jobi Mawtus'));
-correntistas.push(new correntista(4223508636, 'Conta Corrente', 2177, 'Thomasin Latour'));
-correntistas.push(new correntista(185979521, 'Conta Poupança', 25994, 'Lonnie eijden'));
-correntistas.push(new correntista(3151956165, 'Conta Corrente', 7601, 'Alonso Wannan'));
-correntistas.push(new correntista(2138105881, 'Conta Poupança', 33196, 'Bendite Huggett'));
+let correntistas = [
+    new correntista(5486273622, 'Conta Corrente', 27771, 'Abigael Natte'),
+    new correntista(1183971869, 'Conta Poupança', 8675, 'Ramon Connell'),
+    new correntista(9582019689, 'Conta Poupança', 27363, 'Jarret ente'),
+    new correntista(1761924656, 'Conta Poupança', 32415, 'Ansel Ardley'),
+    new correntista(7401971607, 'Conta Poupança', 18789, 'Jacki Shurmer'),
+    new correntista(630841470, 'Conta Corrente', 28776, 'Jobi Mawtus'),
+    new correntista(4223508636, 'Conta Corrente', 2177, 'Thomasin Latour'),
+    new correntista(185979521, 'Conta Poupança', 25994, 'Lonnie eijden'),
+    new correntista(3151956165, 'Conta Corrente', 7601, 'Alonso Wannan'),
+    new correntista(2138105881, 'Conta Poupança', 33196, 'Bendite Huggett'),
+];
 
 let banco = {
     clientes: correntistas, 
@@ -37,39 +36,49 @@ let banco = {
                 return this.clientes[i]
             }
         }
-        return 'Cliente ' + nome + ' não encontrado';
+        return `Cliente ${nome} não encontrado`;
     },
     deposito: function (nome,valor) {
-        let cliente = this.consultarCliente(nome);
-        if (typeof cliente != 'string') {
-            let saldo_anterior = cliente.saldo;
-            cliente.saldo += valor;
+        for(i in this.clientes) {
+            if (this.clientes[i].titular == nome) {
+                let saldo_anterior = this.clientes[i].saldo;
 
-            console.log('Depósito de $' + valor + ' realizado, seu novo saldo é $' + cliente.saldo + ' | saldo anterior: $' + saldo_anterior);
-        } else {
-            console.log(cliente);
+                this.clientes[i].saldo += valor;
+                return `Olá ${nome}, Depósito de $${valor} realizado, seu novo saldo é $${this.clientes[i].saldo} | saldo anterior: $${saldo_anterior}`;
+            } 
         }
+        return `Cliente ${nome} não encontrado`;
     },
     saque: function (nome,valor) {
-        let cliente = this.consultarCliente(nome);
-        if (typeof cliente != 'string') {
-            let saldo_anterior = cliente.saldo;
-            cliente.saldo -= valor;
+        for(i in this.clientes) {
+            if (this.clientes[i].titular == nome) {
+                let saldo_anterior = this.clientes[i].saldo;
 
-            if (cliente.saldo < 0) {
-                console.log('Fundos insuficientes - Saldo $' + saldo_anterior);
-            } else {
-                console.log('Saque de $' + valor + ' realizado, seu novo saldo é $' + cliente.saldo + ' | saldo anterior: $' + saldo_anterior);
-            }            
-
-        } else {
-            console.log(cliente);
-        }
+                if ((this.clientes[i].saldo - valor)< 0) {
+                    return `Olá ${nome}, Fundos insuficientes - Saldo $ ${saldo_anterior}`;
+                } else {
+                    this.clientes[i].saldo -= valor;
+                    return `Olá ${nome}, Saque de $${valor} realizado, seu novo saldo é $${this.clientes[i].saldo}  | saldo anterior: $${saldo_anterior}`;
+                }  
+            } 
+        }     
+        return `Cliente ${nome} não encontrado`;   
     }
 };
 
-banco.deposito('Alonso Wannan', 1000);
-banco.saque("Alonso Wannan", 1001);
+// console.log(banco);
+
+console.log('--- CONSULTAR CLIENTE  ---');
+console.log(banco.consultarCliente('Alonso Wannan'));
+
+console.log('--- DEPÓSITO  ---');
+console.log(banco.deposito('Alonso Wannan', 1000));
+
+console.log('--- SAQUE  ---');
+console.log(banco.saque('Alonso Wannan', 1001));
+
+console.log('---- objeto literal banco apos transacoes ----');
+console.log(banco)
 
 /**
 * BONUS
@@ -79,11 +88,12 @@ banco.saque("Alonso Wannan", 1001);
 */
 
 function propriedadeUnica(arr, prop) {
-  let aux = [];
-  for(i in arr) {
-    aux.push({[prop] : arr[i][prop]} )
-  } 
-  console.log(aux)
+    let aux = [];
+    for(i in arr) {
+        aux.push({[prop] : arr[i][prop]} )
+    } 
+    console.log(aux)
 } 
 
+console.log('---- Propriedade Unica ----');
 propriedadeUnica(banco.clientes, 'titular')
