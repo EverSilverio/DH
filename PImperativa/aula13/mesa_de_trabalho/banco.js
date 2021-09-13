@@ -1,12 +1,4 @@
-/**
- * estrutura objeto literal - correntista
-   correntistas {
-       nro_conta: number,
-       tipo_conta: string, corrente ou poupança
-       saldo: number, decimal
-       titular: string (nome completo)
-   }
-*/
+const contas = require('./contas.json'); //importando arquivo json externo
 
 const correntista = function (nroConta, tipoConta, saldo, titular) {
     this.nro_conta = nroConta;
@@ -15,21 +7,17 @@ const correntista = function (nroConta, tipoConta, saldo, titular) {
     this.titular = titular;
 }
 
-let correntistas = [
-    new correntista(5486273622, 'Conta Corrente', 27771, 'Abigael Natte'),
-    new correntista(1183971869, 'Conta Poupança', 8675, 'Ramon Connell'),
-    new correntista(9582019689, 'Conta Poupança', 27363, 'Jarret ente'),
-    new correntista(1761924656, 'Conta Poupança', 32415, 'Ansel Ardley'),
-    new correntista(7401971607, 'Conta Poupança', 18789, 'Jacki Shurmer'),
-    new correntista(630841470, 'Conta Corrente', 28776, 'Jobi Mawtus'),
-    new correntista(4223508636, 'Conta Corrente', 2177, 'Thomasin Latour'),
-    new correntista(185979521, 'Conta Poupança', 25994, 'Lonnie eijden'),
-    new correntista(3151956165, 'Conta Corrente', 7601, 'Alonso Wannan'),
-    new correntista(2138105881, 'Conta Poupança', 33196, 'Bendite Huggett'),
-];
+for(i in contas) {
+    new correntista(
+        contas[i].nro_conta,
+        contas[i].tipo,
+        contas[i].saldo,
+        contas[i].titular,
+    )
+}
 
 let banco = {
-    clientes: correntistas, 
+    clientes: contas, 
     consultarCliente: function (nome) {
         for(i in this.clientes) {
             if (this.clientes[i].titular == nome) {

@@ -1,0 +1,62 @@
+[
+    {
+        "conta": 5486273622,
+        "tipoConta": "Conta Corrente",
+        "saldo": 27771,
+        "titular": "Abigael Natte"
+    },
+    {
+        "conta": 1183971869,
+        "tipoConta": "Conta Poupança",
+        "saldo": 8675,
+        "titular": "Ramon Connell"
+    },
+    {
+        "conta": 9582019689,
+        "tipoConta": "Conta Poupança",
+        "saldo": 27363,
+        "titular": "Jarret ente"
+    },
+    {
+        "conta": 1761924656,
+        "tipoConta": "Conta Poupança",
+        "saldo": 32415,
+        "titular": "Ansel Ardley"
+    },
+    {
+        "conta": 7401971607,
+        "tipoConta": "Conta Poupança",
+        "saldo": 18789,
+        "titular": "Jacki Shurmer"
+    },
+    {
+        "conta": 630841470,
+        "tipoConta": "Conta Corrente",
+        "saldo": 28776,
+        "titular": "Jobi Mawtus"
+    },
+    {
+        "conta": 4223508636,
+        "tipoConta": "Conta Corrente",
+        "saldo": 2177,
+        "titular": "Thomasin Latour"
+    },
+    {
+        "conta": 185979521,
+        "tipoConta": "Conta Poupança",
+        "saldo": 25994,
+        "titular": "Lonnie eijden"
+    },
+    {
+        "conta": 3151956165,
+        "tipoConta": "Conta Corrente",
+        "saldo": 7601,
+        "titular": "Alonso Wannan"
+    },
+    {
+        "conta": 2138105881,
+        "tipoConta": "Conta Poupança",
+        "saldo": 33196,
+        "titular": "Bendite Huggett"
+    }
+]
