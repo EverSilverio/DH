@@ -2,7 +2,7 @@
 
 Como vimos, os objetos são uma das estruturas mais importantes da programação, tanto que há toda uma área dedicada à programação baseada neles, para entender um pouco mais por que eles são tão úteis e importantes, vamos realizar uma série de práticas para fortalecer melhor as particularidades e utilidades que vêm com eles.
 
-## Descrição do problema
+## Descrição do problema (banco.js / contas.json)
 A partir de um banco eles entram em contato conosco para criar um aplicativo que possa facilitar o manuseio de informações e facilitar as ações que ele precisa. 
 Nosso líder de tecnologia nos pede para pensar em como representar usuários, ou contas bancárias, em vez disso. Cada uma dessas contas tem as seguintes informações:
 
@@ -31,7 +31,7 @@ Se você chegou aqui parabéns, a equipe de desenvolvimento e o líder técnico 
 
 Para que você não fique com o desejo ou que você possa continuar praticando se quiser, propomos um pouco (ou algum) exercício mais, tenha em mente que daqui os exercícios podem subir em dificuldade; como sempre dizemos, paciência, ignore a complexidade e tente resolvê-la com as ferramentas que você tem à sua disposição, você também pode procurar informações extras no google ou documentações que você conhece!!
 
-## Propriedade Única
+## Propriedade Única (solução no final do arquivo banco.js)
 Você deve criar uma função chamada propriedadeUnica que recebe uma array de objetos como parâmetro e uma string. Você deve devolver um novo array de objetos, tendo apenas a propriedade que foi passada como string. exemplo:
 
 ```
@@ -40,7 +40,7 @@ propriedadeUnica(array, "idade") deve retornar [ { idade: 27 }, { idade: 49 } ]
 propriedadeUnica(array, "nome") deve retornar [ { nome: "Lean"}, { nome: "Eze" } ]
 ```
 
-## Calculadora de notas
+## Calculadora de notas (calculadora.js)
 Crie o objeto do aluno,que consistirá nas seguintes propriedades básicas:
 * número
 * Número do arquivo
