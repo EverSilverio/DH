@@ -35,9 +35,9 @@ Para que você não fique com o desejo ou que você possa continuar praticando s
 Você deve criar uma função chamada propriedadeUnica que recebe uma array de objetos como parâmetro e uma string. Você deve devolver um novo array de objetos, tendo apenas a propriedade que foi passada como string. exemplo:
 
 ```
-let array = [ { nome: &quot;Lean&quot;, idade: 27 }, { nome: &quot;Eze&quot;, idade: 49} ]
-propriedadeUnica(array, &quot;idade&quot;) deve retornar [ { idade: 27 }, { idade: 49 } ]
-propriedadeUnica(array, &quot;nome&quot;) deve retornar [ { nome: &quot;Lean&quot;}, { nome: &quot;Eze&quot; } ]
+let array = [ { nome: "Lean", idade: 27 }, { nome: "Eze", idade: 49} ]
+propriedadeUnica(array, "idade") deve retornar [ { idade: 27 }, { idade: 49 } ]
+propriedadeUnica(array, "nome") deve retornar [ { nome: "Lean"}, { nome: "Eze" } ]
 ```
 
 ## Calculadora de notas
