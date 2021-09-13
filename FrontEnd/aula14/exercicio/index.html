@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Loja</title>
+</head>
+
+<body>
+    <main>
+        <h1>Queremos te ajudar a montar sua festa! Bora?</h1>
+        <form>
+            <fieldset class="nome">
+                <legend>Qual seu nome?</legend>
+                <input type="text" name="name" id="name">
+            </fieldset>
+            <fieldset class="itens">
+                <legend>O que você precisa para sua festa?</legend>
+                <input type="checkbox" name="tipo" id="bolo">
+                <label for="bolo">Bolo</label>
+                <input type="checkbox" name="tipo" id="salgados">
+                <label for="salgados">Salgados</label>
+                <input type="checkbox" name="tipo" id="docinhos">
+                <label for="docinhos">Docinhos</label>
+                <input type="checkbox" name="tipo" id="refri">
+                <label for="refri">Refri</label>
+            </fieldset>
+            <fieldset class="quantidades">
+                <legend>Quanto de cada item?</legend>
+                <label for="qtd-bolo">Bolo</label>
+                <input type="text" name="qtd-bolo" id="qtd-bolo">
+
+                <label for="qtd-salgados">Salgados</label>
+                <input type="text" name="qtd-salgados" id="qtd-salgados">
+
+                <label for="qtd-docinhos">Docinhos</label>
+                <input type="text" name="qtd-docinhos" id="qtd-docinhos">
+
+                <label for="qtd-refri">Refri</label>
+                <input type="text" name="qtd-refri" id="qtd-refri">
+            </fieldset>
+            <fieldset class="entrega_container">
+                <legend>Vai retirar ou quer entrega?</legend>
+                <div class="entrega">
+                    <input type="radio" name="envio" id="balcao">
+                    <label for="balcao">Retirada Balcão</label>
+    
+                    <input type="radio" name="envio" id="entrega">
+                    <label for="entrega">Entrega</label>
+                </div>
+
+                <div class="outros">
+                    <label for="bairro">Bairro</label>
+                    <select name="bairro" id="bairro">
+                        <option value="0">Caso entrega selecione o bairro:</option>
+                        <option value="1">Abranches</option>
+                        <option value="2">Atuba</option>
+                        <option value="3">Bacacheri</option>
+                        <option value="4">Bairro Alto</option>
+                        <option value="5">Barreirinha</option>
+                        <option value="6">Boa Vista</option>
+                        <option value="7">Cachoeira</option>
+                        <option value="8">Pilarzinho</option>
+                        <option value="9">Santa Cândida</option>
+                        <option value="10">São Lourenço</option>
+                        <option value="11">Taboão</option>
+                        <option value="12">Tarumã</option>
+                        <option value="13">Tingui</option>
+                    </select>
+                    <label for="data">Data da festa</label>
+                    <input type="date" name="data" id="data">
+                </div>
+            </fieldset>
+
+            <div class="buttons">
+                <button type="submit">Confirmar</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

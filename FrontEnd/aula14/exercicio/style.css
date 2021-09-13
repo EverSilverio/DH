@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+body {
+    background: url(img/background.jpg) center center no-repeat fixed;
+    background-size: cover;
+    font-family: Poppins, Helvetica, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 { 
+    /* color: #FF247F; */
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+input[type=text], input[type=date], select {
+    background-color: #A5DFFF;
+    border: none;
+    height: 25px;
+    padding-left: 10px;
+    font-family: Poppins, Helvetica, sans-serif;
+}
+input, select {
+    margin-bottom: 10px;
+}
+
+.nome {
+    display: flex;
+    flex-direction: column;
+}
+
+.quantidades {
+    display: flex;
+    flex-direction: column;
+}
+
+.outros {
+    display: flex;
+    flex-direction: column;
+}
+.buttons {
+    display: flex;
+    justify-content: center;    
+    margin-bottom: 10px;
+}
+
+button {
+    height: 40px;
+    background-color: #FF247F;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    font-size: 16px;
+}
+
+button[type=submit] {
+    margin-right: 10px;
+}
