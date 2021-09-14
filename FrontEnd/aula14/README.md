@@ -1,8 +1,12 @@
-# Formulário
+# Formulário - _reponsive_
 
-Exemplo:
+## Sample Mobile:
 
-![image](https://user-images.githubusercontent.com/5773748/133171865-b56d25ad-a396-455d-a1ef-2d04f4086cbb.png)
+![image](https://user-images.githubusercontent.com/5773748/133316264-2b22ccd1-55a8-49a0-ac7d-c7801388e75a.png)
+
+## Sample Desktop
+
+![image](https://user-images.githubusercontent.com/5773748/133316454-8d03dda9-975f-4b68-8c60-eeb76630a135.png)
 
 [Preview Navegável](https://htmlpreview.github.io/?https://github.com/EverSilverio/DH/blob/master/FrontEnd/aula14/index.html)
 
