@@ -10,44 +10,67 @@
 </head>
 
 <body>
-    <main>
-        <h1>Queremos te ajudar a montar sua festa! Bora?</h1>
+    <h1>Queremos te ajudar a montar sua festa! Bora?</h1>
+    <main class="container">
         <form>
             <fieldset class="nome">
                 <legend>Qual seu nome?</legend>
-                <input type="text" name="name" id="name">
+                <input type="text" name="name" id="name" placeholder="Digite seu nome">
             </fieldset>
             <fieldset class="itens">
                 <legend>O que você precisa para sua festa?</legend>
-                <input type="checkbox" name="tipo" id="bolo">
-                <label for="bolo">Bolo</label>
-                <input type="checkbox" name="tipo" id="salgados">
-                <label for="salgados">Salgados</label>
-                <input type="checkbox" name="tipo" id="docinhos">
-                <label for="docinhos">Docinhos</label>
-                <input type="checkbox" name="tipo" id="refri">
-                <label for="refri">Refri</label>
+
+                <div class="itens__item">
+                    <div class="itens__check">
+                        <input type="checkbox" name="tipo" id="bolo">
+                        <label for="bolo">Bolo</label>
+                    </div>
+                    <div class="itens__qtd">
+                        <label for="qtd-bolo">Qtd:</label>
+                        <input type="text" name="qtd-bolo" id="qtd-bolo" placeholder="Quantidade bolo">
+                    </div>
+                </div>
+
+                <div class="itens__item">
+                    <div class="itens__check">
+                        <input type="checkbox" name="tipo" id="coxinha">
+                        <label for="coxinha">Coxinha</label>
+                    </div>
+                    <div class="itens__qtd">
+                        <label for="qtd-coxinha">Qtd:</label>
+                        <input type="text" name="qtd-coxinha" id="qtd-coxinha" placeholder="Quantidade coxinha">
+                    </div>
+                </div>
+
+                <div class="itens__item">
+                    <div class="itens__check">
+                        <input type="checkbox" name="tipo" id="Brigadeiro">
+                        <label for="Brigadeiro">Brigadeiro</label>
+                    </div>
+                    <div class="itens__qtd">
+                        <label for="qtd-brigadeiro">Qtd:</label>
+                        <input type="text" name="qtd-brigadeiro" id="qtd-brigadeiro" placeholder="Quantidade brigadeiro">
+                    </div>
+                </div>
+
+                <div class="itens__item">
+                    <div class="itens__check">
+                        <input type="checkbox" name="tipo" id="refri">
+                        <label for="refri">Refri</label>
+                    </div>
+                    <div class="itens__qtd">
+                        <label for="qtd-refri">Qtd:</label>
+                        <input type="text" name="qtd-refri" id="qtd-refri" placeholder="Quantidade refri">
+                    </div>
+                </div>
             </fieldset>
-            <fieldset class="quantidades">
-                <legend>Quanto de cada item?</legend>
-                <label for="qtd-bolo">Bolo</label>
-                <input type="text" name="qtd-bolo" id="qtd-bolo">
 
-                <label for="qtd-salgados">Salgados</label>
-                <input type="text" name="qtd-salgados" id="qtd-salgados">
-
-                <label for="qtd-docinhos">Docinhos</label>
-                <input type="text" name="qtd-docinhos" id="qtd-docinhos">
-
-                <label for="qtd-refri">Refri</label>
-                <input type="text" name="qtd-refri" id="qtd-refri">
-            </fieldset>
             <fieldset class="entrega_container">
                 <legend>Vai retirar ou quer entrega?</legend>
                 <div class="entrega">
                     <input type="radio" name="envio" id="balcao">
                     <label for="balcao">Retirada Balcão</label>
-    
+
                     <input type="radio" name="envio" id="entrega">
                     <label for="entrega">Entrega</label>
                 </div>

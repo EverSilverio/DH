@@ -15,12 +15,23 @@ body {
 main {
     display: flex;
     flex-direction: column;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+
 }
 
 h1 { 
     /* color: #FF247F; */
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
     text-align: center;
+}
+
+.container {
+    width: 500px;
 }
 
 fieldset {
@@ -32,7 +43,6 @@ input[type=text], input[type=date], select {
     background-color: #A5DFFF;
     border: none;
     height: 25px;
-    padding-left: 10px;
     font-family: Poppins, Helvetica, sans-serif;
 }
 input, select {
@@ -44,15 +54,26 @@ input, select {
     flex-direction: column;
 }
 
-.quantidades {
+.itens__item {
     display: flex;
-    flex-direction: column;
+    justify-self: space-between;
+}
+
+.itens__check {
+    width: 35%;
+}
+
+.itens__qtd {
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .outros {
     display: flex;
     flex-direction: column;
 }
+
 .buttons {
     display: flex;
     justify-content: center;    
@@ -66,9 +87,16 @@ button {
     border-radius: 5px;
     border: none;
     width: 200px;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 button[type=submit] {
     margin-right: 10px;
+}
+
+@media screen and (max-width:768px) {
+    body { font-size: 10px }
+    input[type=text], input[type=date], select { font-size: .7rem }    
+    .container { width: 355px }    
+    .itens__qtd input { width: 80% }
 }
