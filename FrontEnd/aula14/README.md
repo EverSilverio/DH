@@ -1,4 +1,4 @@
-# Formulário - _reponsive_
+# Formulário - _responsive_
 
 ## Sample Mobile:
 
