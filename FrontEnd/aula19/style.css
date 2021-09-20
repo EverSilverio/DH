@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: red;
+    height: 45px;
+    color: white;
+}
+
+.header__logo {
+    margin-left: 15px;;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+}
+
+.header__menu li {
+    margin-left: 30px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.card__img {
+    width: 100%;
+    height: 150px;
+    background-color: gray;
+
+}
+
+.center {
+    text-align: center;
+}
+
+.bottom-20 {
+    margin-bottom: 20px;
+}
+
+.top-20 {
+    margin-top: 20px;
+}
+
+.card__legend {
+    font-size: .9rem;
+    font-weight: 600;
+
+}
+
+.card__views {
+    font-size: .7rem;;
+}
