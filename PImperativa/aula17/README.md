@@ -26,7 +26,7 @@ arr.forEach()
 
 ## Métodos avançados array
 
-> [metodos__array.js](https://github.com/EverSilverio/DH/blob/master/PImperativa/aula17/metodos_array.js)
+> [metodos_array.js](https://github.com/EverSilverio/DH/blob/master/PImperativa/aula17/metodos_array.js)
 
 1. Crie uma função que receba um array composto por números e retorna uma nova matriz (array) com todos os valores divididos pela soma de toda a matriz, usando map() e reduce().
 2. Crie uma função que receba um array de palavras e um número, e que retorna uma matriz (array) com apenas as palavras que têm mais do que uma quantidade de letras maior do que o número informado. (verifique como funciona o método filter ())
