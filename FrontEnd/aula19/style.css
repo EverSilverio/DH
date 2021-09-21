@@ -43,20 +43,25 @@ ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 40px;
 }
 
 .card {
     display: flex;
     flex-direction: column;
     width: 25%;
+    padding: 10px;
     min-width: 250px;
     max-width: 300px;
+    box-shadow: 3px 3px 12px rgb(68, 67, 67);
+    border-radius: 10px;
+    border: 1px solid black;
+    transition-duration: .3s;
+    cursor: pointer;
 }
-
-.card__img {
-    width: 100%;
-    height: 150px;
+.card:hover {
+    box-shadow: 1px 1px 8px rgb(68, 67, 67);
+    transform: scale(1.2);
 }
 
 .center {
@@ -74,10 +79,12 @@ ul {
 .card__legend {
     font-size: .9rem;
     font-weight: 600;
-
 }
 
 .card__views {
     font-size: .7rem;;
 }
 
+.card__img img {
+    width: 100%;
+}
