@@ -1,5 +1,7 @@
 # Preparando o cérebro!
 
+> Resultado aqui-> [script.js](https://github.com/EverSilverio/DH/blob/master/PImperativa/checkpoint_2/script.js)
+
 Agora que temos todo o conhecimento necessário, vamos realizar uma série de exercícios para treinar um pouco o nosso cérebro.
 
 1. Loop de Pares
