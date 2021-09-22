@@ -88,3 +88,10 @@ ul {
 .card__img img {
     width: 100%;
 }
+
+@media (min-width: 768px) {
+    .card {
+        min-width: 390px;
+        max-width: 468px;        
+    }
+}
