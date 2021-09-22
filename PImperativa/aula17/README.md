@@ -46,3 +46,26 @@ Portanto, crie um array de objetos literais com essas informações. No sistema,
 4. Classifique todos os produtos pela quantidade de dinheiro que geraram.
 5. Encontre um produto e atribua a ele um novo valor (reutilize o código que permite encontrar o produto pelo nome).
 6. Calcule o lucro total após pagar 45% do lucro em impostos.
+
+saída no console:
+```
+---- ALTERACAO DE PRECO ----
+Novo preço do produto Tabaco, de R$ 175,00 para R$ 195,00
+Lucro total no período: R$ 66.708,00
+Lucro do produto Tabaco no período: R$ 11.750,00
+---- PRODUTOS COM VENDAS MAIORES QUE R$ 50.000,00 ----
+Café vendeu R$ 85.200,00
+Algodão vendeu R$ 149.850,00
+Arroz vendeu R$ 57.750,00
+Soja vendeu R$ 76.840,00
+--- PRODUTOS QUE MAIS VENDERAM POR ORDEM dec
+Algodão vendeu R$ 149.850,00
+Café vendeu R$ 85.200,00
+Soja vendeu R$ 76.840,00
+Arroz vendeu R$ 57.750,00
+Tabaco vendeu R$ 48.750,00
+Milho vendeu R$ 17.100,00
+Cana-de-açúcar vendeu R$ 11.760,00
+---- LUCRO ATUAL MENOS IMPOSTOS ----
+O lucro atual menos impostos de 45% é R$ 36.689,40
+```
