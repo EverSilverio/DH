@@ -2,7 +2,7 @@
 
 ## SAMPLE DESKTOP
 
-![image](https://user-images.githubusercontent.com/5773748/134092409-300f6389-d5f1-42bb-a186-903f067d95b4.png)
+![image](https://user-images.githubusercontent.com/5773748/134270102-622da4c3-bd6b-47bd-9edb-473e06a9012e.png)
 
 ## SAMPLE MOBILE
 
