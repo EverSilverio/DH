@@ -40,8 +40,8 @@ loopDeImpares(5, 'bacon');
 
 /*
 3. Soma
-	Você deve criar uma função chamada soma que receba um número como parâmetro e 
-    retorne a soma de todos os seus números anteriores, incluindo o número recebido por parâmetro.
+Você deve criar uma função chamada soma que receba um número como parâmetro e 
+retorne a soma de todos os seus números anteriores, incluindo o número recebido por parâmetro.
     Exemplo: 
     soma(3) deve retornar 6 pois faz (1 +2 +3)
     soma(8) deve retornar 36
@@ -129,7 +129,7 @@ Você deve criar uma função chamada arrayHandler que receba dois arrays de igu
 como parâmetros e exiba no console: "Eu sou {elemento do array 1} e eu sou {elemento do array 2}".
     Exemplo:
     arrayHandler([1,2,3], [“o”,”l”,”á”]) deve mostrar: 
-            Eu sou 1 e eu sou o
+    Eu sou 1 e eu sou o
     Eu sou 2 e eu sou l
     Eu sou 3 e eu sou á
 */
