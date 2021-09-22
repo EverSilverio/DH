@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
+
+.color {
+    color: #8EA1A9;
+    color: #5B90A8;
+    color: #0171A5;
+    color: #023B52;
+    color: #01212B;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+a{ 
+    color: #fff;
+}
+
+body {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    background-color: #8EA1A9;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #01212B;
+    height: 50px;
+    z-index: 1;
+}
+
+.menu {
+    display: flex;
+    color: #fff;
+    gap: 40px;
+    padding-right: 20px;
+}
+
+.banner {
+    position: relative;
+    background: url(img/banner.jpg) center center fixed no-repeat;
+    background-size: cover;
+    height: calc(100vh - 50px);
+    z-index: 2;
+}
+
+.banner__text {
+    position: absolute;
+    bottom: 50px;
+    left: 25px;
+    font-size: 45px;
+    color: #fff;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    z-index: 3;
+}
+
+.content__card {
+    position: relative;
+    background-color: #fff;
+    margin: 10px;
+    padding: 30px;
+    color: #01212B;
+}
+
+h2 {
+    color: #023B52;
+}
+
+.more {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    font-size: .7rem;
+    background-color: #023B52;
+    color: #fff;
+    padding: 5px 10px;
+}
