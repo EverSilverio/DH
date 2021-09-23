@@ -90,7 +90,6 @@ let listaCinema = [
 console.log('--- EXERCICIO CINEMA ---');
 
 function calcOpiniao(listaCinema) {
-    // 1. a média das idades das pessoas que responderam ótimo;
     let somaIdadeOtimo = 0;
     var qtdOtimo = 0;
     var qtdRegular = 0;
@@ -116,8 +115,7 @@ function calcOpiniao(listaCinema) {
     })
 
     let mediaIdadeOtimo = (somaIdadeOtimo / qtdOtimo).toFixed(2);
-
-    let percentualBom = ((qtdBom / 15) * 100).toFixed(0);
+    let percentualBom = ((qtdBom / listaCinema.length) * 100).toFixed(0);
 
     console.log(`Media da idade das pessoas responderam ÓTIMO é ${mediaIdadeOtimo}`);
     console.log(`${qtdRegular} pessoas responderam REGULAR`);
