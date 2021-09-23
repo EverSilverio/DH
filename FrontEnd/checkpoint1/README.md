@@ -1,5 +1,3 @@
-``` under construction ```
-
 # Checkpoint 01 - Turma 05
 ## Objetivo
 
