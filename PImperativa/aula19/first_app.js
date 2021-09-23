@@ -107,11 +107,6 @@ function calcOpiniao(listaCinema) {
             default:
                 break;
         }
-
-        if (op.opiniao === 3) {
-            somaIdadeOtimo += op.idade;
-            qtdOtimo += 1;
-        }
     })
 
     let mediaIdadeOtimo = (somaIdadeOtimo / qtdOtimo).toFixed(2);
