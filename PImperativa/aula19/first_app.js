@@ -33,11 +33,10 @@ function calculo() {
     //soma de altura das mulheres ?
     // total de mulheres ?
     // media ?
-
     let somaAltMulheres = 0;
     let qtdMulheres = 0;
     let qtdHomens = 0;
-    //retorna media da lista das mulheres
+
     lista.forEach(function (el) {
         if (el.sexo === 'F') {
             qtdMulheres += 1;
@@ -53,11 +52,10 @@ function calculo() {
     console.log(`A maior altura do grupo é ${lista[14].altura}`);
     
     console.log(`A média de altura das mulheres é ${mediaAltMulheres}`);
-
     console.log(`A quantidade de homens é ${qtdHomens}`);
 }
 
-calculo();
+calculo();  //invoca função de calculo
 
 /*
 Cada espectador de um cinema respondeu a um questionário no qual constava sua 
@@ -115,7 +113,6 @@ function calcOpiniao(listaCinema) {
     console.log(`Media da idade das pessoas responderam ÓTIMO é ${mediaIdadeOtimo}`);
     console.log(`${qtdRegular} pessoas responderam REGULAR`);
     console.log(`O percentual de pessoas que responderam BOM é ${percentualBom}%`);
-    
 }
 
-calcOpiniao(listaCinema);
+calcOpiniao(listaCinema); //invoca funcao de calculo opiniao
