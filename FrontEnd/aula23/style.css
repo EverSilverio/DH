@@ -10,6 +10,13 @@
 }
 
 a{ 
+    color: #CCE7F2;
+    text-shadow: 1px 1px 2px #000;
+    transform: scale(1.1);
+}
+
+a:hover {
+    text-shadow: 3px 3px 5px #000;
     color: #fff;
 }
 
@@ -26,7 +33,7 @@ body {
     top: 0;
     background-color: #01212B;
     height: 50px;
-    z-index: 1;
+    z-index: 10;
 }
 
 .menu {
@@ -36,12 +43,13 @@ body {
     padding-right: 20px;
 }
 
+
+
 .banner {
     position: relative;
     background: url(img/banner.jpg) center center fixed no-repeat;
     background-size: cover;
     height: calc(100vh - 50px);
-    z-index: 2;
 }
 
 .banner__text {
@@ -50,12 +58,12 @@ body {
     left: 25px;
     font-size: 45px;
     color: #fff;
+    text-shadow: 3px 3px 8px #000;
 }
 
 .content {
     display: flex;
     justify-content: space-around;
-    z-index: 3;
 }
 
 .content__card {
@@ -78,4 +86,12 @@ h2 {
     background-color: #023B52;
     color: #fff;
     padding: 5px 10px;
+    text-shadow: 1px 1px 2px #000;
+    box-shadow: 0 0 5px #035476;
+    transition-duration: .3s;
+}
+
+.more:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
