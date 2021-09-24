@@ -2,6 +2,10 @@
 
 >Entrega 28/09
 
+## ACESSE O PREVIEW CLICANDO NA IMAGEM
+
+[![image](https://user-images.githubusercontent.com/5773748/134737272-9f379a1c-f0ba-4774-9b3d-174e5792f250.png)](https://eversilverio.github.io/DH/FrontEnd/checkpoint2/)
+
 ## Objetivo
 >O objetivo do trabalho é desenvolver habilidades na criação de formulários, animações e pseudo-seletores.
 
