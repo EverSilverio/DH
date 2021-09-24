@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
     <title>Curitiba</title>
 </head>
@@ -24,8 +25,8 @@
         </section>
 
         <section class="content__video">
-            <iframe width="500" height="300" src="https://www.youtube.com/embed/jJeGZNrsasY"
-                title="YouTube video player" frameborder="0"
+            <iframe class="video" src="https://www.youtube.com/embed/jJeGZNrsasY" title="YouTube video player"
+                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </section>
@@ -72,24 +73,42 @@
     </main>
 
     <footer class="footer">
-        <a href="https://www.instagram.com/curitiba_pmc/?hl=pt-br" target="_blank" title="Instagram Prefs"><i
-                class="fa fa-instagram fa-2x"></i></a>
-        <a href="https://www.youtube.com/channel/UCmRMAq8g3xlCsauCZpzYGgg" target="_blank"
-            title="Canal Youtube Prefs"><i class="fa fa-youtube fa-2x"></i></a>
-        <a class="cadastro" href="#form-page"></i> Receba informações sobre Curitiba</a>
+        <a class="footer__social" href="https://www.instagram.com/curitiba_pmc/?hl=pt-br" target="_blank"
+            title="Instagram Prefs">
+            <i class="fa fa-instagram fa-2x"></i>
+            <span class="footer__descri">Instagram Prefs</span>
+
+        </a>
+
+        <a class="footer__social" href="https://www.youtube.com/channel/UCmRMAq8g3xlCsauCZpzYGgg" target="_blank"
+            title="Canal Youtube Prefs">
+            <i class="fa fa-youtube fa-2x"></i>
+            <span class="footer__descri">Youtube Prefs</span>
+        </a>
+
+        <a class="cadastro desktop" href="#form-page">
+            Receba informações sobre Curitiba
+        </a>
+        <a class="cadastro mobile" href="#form-page">
+            + Informações
+        </a>
+
         <i class="fa fa-arrow-right fa-lg cadastro-arrow"></i>
     </footer>
 
     <main class="modal_container" id="form-page">
-        <section draggable="true" class="modal">
+        <section class="modal">
             <a href="#"><span class="close eh" title="Fechar">Fechar x</span></a>
-            <h2 class="modal-title">Cadastro</h2>
+            <h2 class="modal__title">Cadastro</h2>
+            <p class="modal__descri">Preencha esse formulário para receber mais informações sobre Curitiba, de acordo
+                com seu interesse:</p>
             <form class="form_cadastro">
                 <label for="nome">Nome</label>
                 <input class="eh" type="text" name="nome" id="nome" placeholder="Informe seu nome" maxlength="100">
 
                 <label for="email">E-mail</label>
-                <input class="eh" type="email" name="email" id="email" placeholder="Informe seu e-mail, exemplo: email@gmail.com">
+                <input class="eh" type="email" name="email" id="email"
+                    placeholder="Informe seu e-mail, exemplo: email@gmail.com">
 
                 <div class="input_group">
                     <div class="input_item">
@@ -122,7 +141,7 @@
 
                 <label for="interesse">Interesses: </label>
                 <div id="interesse_group">
-                    <input class="eh-2" type="checkbox" name="interesse" id="residente"> 
+                    <input class="eh-2" type="checkbox" name="interesse" id="residente">
                     <label for="residente">Residência</label>
                     <input class="eh-2" type="checkbox" name="interesse" id="estudante">
                     <label for="estudante">Estudos</label>

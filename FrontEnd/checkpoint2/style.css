@@ -10,6 +10,7 @@
     box-sizing: border-box;
     font-family: Poppins, Helvetica, sans-serif;
     border: none;
+    text-decoration: none;
 }
 
 body {
@@ -75,6 +76,11 @@ li {
     margin-bottom: 10px;
 }
 
+.video {
+    width: 535px;
+    min-height: 300px;
+}
+
 .content__lista {
     text-align: center;
     font-size: 0.9rem;
@@ -90,10 +96,6 @@ li {
     color: white;
 }
 
-.fa-instagram {
-    margin-right: 50px;
-}
-
 .footer {
     display: flex;
     position: fixed;
@@ -107,10 +109,28 @@ li {
     text-shadow: black 0.1em 0.1em 0.3em;
 }
 
+.footer__social {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    transition-duration: .3s;    
+}
+
+.footer__social:hover {
+    transform: scale(1.2);
+}
+
+.footer__descri {
+    font-size: .8em;
+    margin-left: 10px;
+    color: #fff;
+}
+
 .cadastro-arrow {
     position: absolute;
     right: 120px;
-    animation: fadeout 1s 1 4s forwards, destaque .5s 8 alternate ;
+    animation: destaque .5s 8 alternate ;
+    transition-duration: .3s;
 }
 
 .cadastro {
@@ -121,13 +141,20 @@ li {
     text-decoration: none;
     color: #fff;
     width: 100px;
-    /* animation: fadeout 1s 1 4s forwards; */
+    transition-duration: .3s;
+
+}
+
+.cadastro.mobile {
+    display: none;
+    font-size: .8em;
+    width: 120px;
+
 }
 
 .cadastro:hover, .cadastro:hover ~ .cadastro-arrow {
     font-weight: 600;
     transform: scale(1.1);
-    transition-duration: .3s;
 }
 
 /* modal */
@@ -154,9 +181,9 @@ li {
 
 .modal {
     position: relative;
-    margin-top: 50px;
+    margin-top: 30px;
     width: 600px;
-    height: 550px;
+    height: 610px;
     background-color: #fff;
     border-radius: 10px;
     padding: 20px 30px;
@@ -166,6 +193,7 @@ li {
 .form_cadastro {
     display: flex;
     flex-direction: column;
+    margin-top: 10px;
 }
 
 .input_group {
@@ -180,6 +208,7 @@ li {
     width: 100%;
     height: 80px;
 }
+
 
 .form_cadastro input, .form_cadastro select {
     height: 40px;
@@ -251,13 +280,40 @@ input[type=checkbox]:nth-child(1), input[type=radio]:nth-child(1) {
     to {transform: translateX(-15px)}
 }
 
-@keyframes fadeout {
-    to {opacity: .4}
+/*media screen tratamentos*/
+@media only screen and (max-width: 650px) {
+    .footer__descri {
+        display: none;
+    }
+
+    .cadastro.mobile {
+        display: block;
+    }
+
+    .cadastro.desktop, .cadastro-arrow {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 499px) {
     .content {
         width: 550px;
     }
+
+    .modal {
+        max-width: 90%;
+        height: 720px;
+    }
+
+    .input_group {
+        display: block;
+    }
+    
+    .input_item {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 80px;
+    } 
 }
 
