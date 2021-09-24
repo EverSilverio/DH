@@ -1,5 +1,3 @@
-``` UNDER CONSTRUCTION ```
-
 # Checkpoint 02 - Front End I - Turma 05
 
 >Entrega 28/09
@@ -34,3 +32,18 @@
 - [ ] 5. Suba o trabalho no Github pelo formulário a seguir: https://forms.gle/WQizNgXKZmF9zbgY9
 
 ## Conclusão
+
+[Acesse o preview](https://eversilverio.github.io/DH/FrontEnd/checkpoint2/)
+
+### Sample Desktop
+
+![sample desktop](https://user-images.githubusercontent.com/5773748/134736753-82c7af36-662d-4a06-9f2e-63b34f5364b2.png)
+
+### Sample Mobile
+
+![sample mobile](https://user-images.githubusercontent.com/5773748/134736963-64ff37a7-dbac-46e9-b927-0c211d2e6ade.png)
+
+
+
+
+
