@@ -134,14 +134,15 @@ body {
     font-family: "Press Start 2P", 'Courier New', Courier, monospace;
     font-size: .5em;
     color: black;
+    text-shadow: 0 0 8px #000;
 }
 
 .avatar {
     width: 55px;
     border-radius: 50%;
     margin-bottom: 2px;
+    box-shadow: 0 0 8px #0A7029;
 }
-
 
 @media only screen and (max-width: 768px) {
 
@@ -164,7 +165,6 @@ body {
     .card__title {
         font-size: 1.2em;
         margin-top: 50px;
-
     }
 
     .content__title {
