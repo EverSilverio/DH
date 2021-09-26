@@ -112,7 +112,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 50px;
-    position: fixed;
+    position: fixed;text-shadow: 0 0 8px #000;
     bottom: 0;
     height: 80px;
     width: 100vw;   
