@@ -16,43 +16,41 @@
 <body>
     <header class="header">
         <h1 class="title">CABREÚVA</h1>
-        <a class="cadastro" href="#form" title="Formulário">Saiba mais
-        <img class="icon_logo" src="img/forest.png" alt="Logo"></a>
+        <a class="cadastro" href="#form" title="Formulário">
+            <span class="more">Saiba mais</span>
+            <img class="icon_logo no-mobile" src="img/forest.png" alt="Logo"></a>
     </header>
-    <div class="container">
-        <main class="main">
-            <p class="textmain">
-                Conhecida como <strong class="destaque">"A cidade da amizade"</strong>, a apenas 80 km de São Paulo está
-                a charmosa cidade de Cabreúva: <strong class="destaque"> pedaço da natureza</strong> e <strong
-                    class="destaque"> calmaria </strong> sem precisar ir muito longe da capital. O destino é a pedida
-                certa para quem quer fazer um passeio bate e volta diferente ou até mesmo curtir um final de semana
-                longe da cidade.
-            </p>
-            <div class="video">
-                <iframe width="1080" height="600" src="https://www.youtube.com/embed/_m3y86SRCNk"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-            </div>
-            <h2> <strong> Curiosidades: </strong> </h2>
-            <ul class="list">
-                <li><strong>Festival de inverno:</strong> No mês de julho é realizado o festival de inverno, uma
-                    oportunidade para curtir a gastronomia local e muita música.
-                <li><strong>Carnaval de rua:</strong> Blocos de rua, com bandinhas e desfiles típicos da cidade.
-                <li><strong>Trilhas e cachoeiras:</strong> Cabreúva possui muitas trilhas e cachoeiras para quem gosta
-                    de estar em contato com a natureza.
-            </ul>
-            <div class="icons">
-                <a href="https://www.instagram.com/cabreuvadicas/" target="blank">
-                    <img class="icon" src="img/instagram.png" alt="">
-                </a>
-                <a href="https://www.youtube.com/watch?v=D79qZVARILk" target="blank">
-                    <img class="icon" src="img/youtube.png" alt="">
-                </a>
-            </div>
-        </main>
-    </div>
+    <main class="main">
+        <p class="textmain">
+            Conhecida como <strong class="destaque">"A cidade da amizade"</strong>, a apenas 80 km de São Paulo está
+            a charmosa cidade de Cabreúva: <strong class="destaque"> pedaço da natureza</strong> e <strong
+                class="destaque"> calmaria </strong> sem precisar ir muito longe da capital. O destino é a pedida
+            certa para quem quer fazer um passeio bate e volta diferente ou até mesmo curtir um final de semana
+            longe da cidade.
+        </p>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/_m3y86SRCNk" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+        <h2> <strong> Curiosidades: </strong> </h2>
+        <ul class="list">
+            <li><strong>Festival de inverno:</strong> No mês de julho é realizado o festival de inverno, uma
+                oportunidade para curtir a gastronomia local e muita música.
+            <li><strong>Carnaval de rua:</strong> Blocos de rua, com bandinhas e desfiles típicos da cidade.
+            <li><strong>Trilhas e cachoeiras:</strong> Cabreúva possui muitas trilhas e cachoeiras para quem gosta
+                de estar em contato com a natureza.
+        </ul>
+        <div class="icons">
+            <a href="https://www.instagram.com/cabreuvadicas/" target="blank">
+                <img class="icon" src="img/instagram.png" alt="">
+            </a>
+            <a href="https://www.youtube.com/watch?v=D79qZVARILk" target="blank">
+                <img class="icon" src="img/youtube.png" alt="">
+            </a>
+        </div>
+    </main>
     <footer class="footer">
         <address class="textfooter">
             Certified Tech Developer - Digital House, Mercado Livre e Globant | Criação e Desenvolvimento: <a
@@ -65,23 +63,28 @@
             <form class="formulario">
                 <label for="name"> Nome <span class="required">*</span> </label>
                 <input class="eh" type="text" name="name" id="nome" placeholder="Digite o seu nome completo" required>
-        
+
                 <label for="email"> Email <span class="required">*</span></label>
                 <input class="eh" type="text" name="email" id="email" placeholder="exemplo@exemplo.com.br" required>
-        
+
                 <label for="tel"> Telefone <span class="required">*</span></label>
-                <input class="eh" size="90" type="tel" name="tel" id="tel" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" placeholder="(XX) XXXXX-XXXX" required>
-        
+                <input class="eh" size="90" type="tel" name="tel" id="tel" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}"
+                    placeholder="(XX) XXXXX-XXXX" required>
+
                 <label for="dataNasc"> Data de Nascimento </label>
                 <input class="eh" type="date" name="dataNasc" id="dataNasc" max="2021-10-15" required />
-        
+
                 <div class="input_group">
-                    <input class="eh-2" type="radio" name="radio1" id="maioridade" checked>
-                    <label for="maioridade"> Tenho mais de 18 anos </label>
-                    <input class="eh-2" type="radio" name="radio1" id="menoridade">
-                    <label for="menoridade"> Sou menor de idade </label>
+                    <div class="input_check">
+                        <input class="eh-2" type="radio" name="radio1" id="maioridade" checked>
+                        <label for="maioridade"> Tenho mais de 18 anos </label>
+                    </div>
+                    <div class="input_check">
+                        <input class="eh-2" type="radio" name="radio1" id="menoridade">
+                        <label for="menoridade"> Sou menor de idade </label>
+                    </div>
                 </div>
-        
+
                 <label>Pontos de interesse:</label>
                 <select class="eh" name="Pontos de interesse">
                     <option value="0"> Trilhas e cachoeiras </option>
@@ -101,7 +104,7 @@
                     <label for="ch_trabalho"> Trabalho </label>
                 </div>
                 <div class="buttons">
-                    <button class="btn eh"  type="submit" id="enviar">Enviar</button>
+                    <button class="btn eh" type="submit" id="enviar">Enviar</button>
                     <button class="btn eh" type="reset" id="reset">Limpar dados</button>
                 </div>
                 <span><span class="required">*</span> Campos obrigatórios</span>

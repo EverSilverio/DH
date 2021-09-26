@@ -8,14 +8,10 @@ body{
     background-size: cover;  
 }
 
-.container{
-    width: 100%;  
-}
-
 .header {
     position:relative;
     top: 0;
-    width: 100%;
+    width: 100vw;
     background-color: rgba(0, 0, 0, 0.952);
     padding: 10px 10px;
 }
@@ -31,6 +27,10 @@ body{
     width: 40px;
     height: 40px;
     transition:0.3s;  
+}
+
+.mobile {
+    display: none;
 }
 
 .icon_logo:hover{
@@ -60,10 +60,14 @@ body{
 
 .video{
     position: relative;
-    width: 1080px;
-    height: 600px;
     text-align: center;
     margin: 0 auto;
+}
+
+.video iframe {
+    width: 1080px; 
+    height: 600px;
+    padding: 0 20px;
 }
 
 h2{
@@ -114,7 +118,7 @@ h2{
 
 .footer{
     position:relative;
-    width: 100%;
+    width: 100vw;
     background-color:black; 
     padding: 10px;
 }
@@ -175,6 +179,25 @@ input, select{
     vertical-align: -webkit-baseline-middle;
     vertical-align: middle;
     border-radius: 10px;
+}
+
+input[type=checkbox], input[type=radio] {
+    height: 25px;
+}
+
+.input_group {
+    display: flex;
+    justify-content:space-evenly;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.input_check {
+    display: flex;
+}
+
+.input_check label {
+    padding-left: 10px;
 }
 
 .cadastro{
@@ -246,5 +269,54 @@ span {
     transform: scale(1.5);
 }
 
+@media only screen and (max-width: 1080px) {
 
+    .video iframe {
+        width: 720px; 
+        height: 400px;
+    }    
 
+}
+
+@media only screen and (max-width: 720px) {
+    .video iframe {
+        width: 480px; 
+        height: 260px;
+    }    
+
+}
+
+@media only screen and (max-width: 480px) {
+    .no-mobile {
+        display: none;
+    }
+
+    .video iframe {
+        width: 360px; 
+        height: 200px;
+    }
+
+    .textmain, .list {
+        font-size: 1.5em;
+    }
+
+    .cadastro{
+        text-align: center;
+        width: 60px;
+        top:50%;
+        transform: translate(0, -60%);
+        right: 5px;
+    }
+
+    .modal{
+        width: 350px;
+        height: 540px;
+        background-color:honeydew;
+        padding:30px;
+        border-radius: 10px;
+    }
+
+    #form {
+        font-size: .8em;
+    }
+}
