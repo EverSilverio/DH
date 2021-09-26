@@ -201,7 +201,7 @@ input[type=checkbox], input[type=radio] {
 
 .cadastro{
     position:absolute;
-    top:5px;
+    top:0;
     right: 10px;
     display:flex;
     flex-direction: column;
