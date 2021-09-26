@@ -213,6 +213,7 @@ li {
     height: 40px;
     margin-bottom: 12px;
     vertical-align: -webkit-baseline-middle;
+    vertical-align: middle;
     padding-left: 10px;
     border: 1px solid rgba(80, 173, 48, 0.5)
 }
