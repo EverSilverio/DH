@@ -187,8 +187,7 @@ input[type=checkbox], input[type=radio] {
 
 .input_group {
     display: flex;
-    justify-content:space-evenly;
-    gap: 10px;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
