@@ -1,163 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="style.css">
-    <title>Curitiba</title>
+    <title>Turismo :: Cidades</title>
 </head>
-
 <body>
     <header class="header">
-        <h1 class="header__title">Curitiba</h1>
+        <h1 class="header__title">As cidades mais lindas do Brasil</h1>
     </header>
     
-    <main class="content" id="home-page">
-        <section class="content__text">
-            <p><strong>Curitiba</strong> é uma cidade linda, com muitas <strong>áreas verdes</strong> distribuídas por
-                suas diversas <strong>praças</strong> e <strong>parques</strong>. No Centro, a beleza fica por conta da
-                vida intensa nas ruas e dos edifícios e mansões do século XIX, em contraste com as construções art-déco,
-                ecléticas, neogóticas e modernistas que convivem lado a lado.
-            </p>
-        </section>
-
-        <section class="content__video">
-            <iframe class="video" src="https://www.youtube.com/embed/jJeGZNrsasY" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </section>
-
-        <section class="content__lista">
-            <h2 class="content__subtitle">Curiosidades</h2>
-            <ul>
-                <li>
-                    O nome da cidade vem da expressão "kur yt iwa", usada pelos índios tingui, que significa lugar cheio
-                    de pinheiros.
-                </li>
-                <li>
-                    Metrópole: Curitiba tem cerca de 1,8 milhão de habitantes.
-                </li>
-                <li>
-                    Conhecida pelas suas áreas verdes e planejamento urbano, a cidade detém os títulos de Capital
-                    Ecológica do Brasil e cidade mais sustentável ambientalmente da América Latina.
-                </li>
-                <li>
-                    Curitiba é capital mais fria do Brasil.
-                </li>
-                <li>
-                    Curitiba tem o menor índice de analfabetismo entre as capitais brasileiras.
-                </li>
-                <li>
-                    Um dos apelidos de Curitiba é "Cidade Sorriso", em contraponto à fama de que seus moradores são
-                    antipáticos.
-                </li>
-                <li>
-                    Prédio que Gira: Em Curitiba foi construído o primeiro prédio giratório do mundo, o Suíte Vollard.
-                    Seus 11 apartamentos, um por andar, podem girar 360º independentemente. Apesar de tanta inovação, o
-                    empreendimento foi um fracasso de vendas e acabou abandonado!
-                </li>
-                <li>
-                    Curitibanês: O vocabulário curitibano é peculiar. Se você pedir para um piá lhe servir uma vina com
-                    bera, pode esperar que o rapaz vai trazer a salsicha e a cerveja!
-                </li>
-                <li>
-                    Por último, não menos importante: O maior consumo de Rock'n Roll percapta do Brasil! Possui a
-                    primeira Loja Hard Rock Café do país! 🤘
-                </li>
-            </ul>
+    <main class="content">
+        <h2 class="content__title">Selecione uma cidade para visitar</h2>
+        <section class="content__banner">
+            <a href="curitiba" target="_blank" class="banner__card">
+                <div id="curitiba" class="card__img"></div>
+                <h2 class="card__title">
+                    Curitiba
+                </h2>
+            </a>
+            <a href="cabreuva" target="_blank" class="banner__card">
+                <div id="cabreuva" class="card__img"></div>
+                <h2 class="card__title">
+                    Cabreúva
+                </h2>
+            </a>
+            <a href="campinas" target="_blank" class="banner__card">
+                <div id="campinas" class="card__img"></div>
+                <h2 class="card__title">
+                    Campinas
+                </h2>
+            </a>                        
         </section>
     </main>
 
     <footer class="footer">
-        <a class="footer__social" href="https://www.instagram.com/curitiba_pmc/?hl=pt-br" target="_blank"
-            title="Instagram Prefs">
-            <i class="fa fa-instagram fa-2x"></i>
-            <span class="footer__descri">Instagram Prefs</span>
-
+        <a href="https://github.com/Karina-Bueno" target="_blank" class="footer__card">
+            <img class="avatar" src="img/karina.png" alt="karina">
+            <span class="footer__devname">Karina</span>
+        </a>
+        <a href="https://github.com/https://github.com/edersonOl" target="_blank" class="footer__card">
+            <img class="avatar" src="img/ederson.png" alt="ederson">
+            <span class="footer__devname">Ederson</span>
+        </a>
+        <a href="https://github.com/EverSilverio" target="_blank" class="footer__card">
+            <img class="avatar" src="img/everton.png" alt="everton">
+            <span class="footer__devname">Everton</span>
         </a>
 
-        <a class="footer__social" href="https://www.youtube.com/channel/UCmRMAq8g3xlCsauCZpzYGgg" target="_blank"
-            title="Canal Youtube Prefs">
-            <i class="fa fa-youtube fa-2x"></i>
-            <span class="footer__descri">Youtube Prefs</span>
-        </a>
 
-        <a class="cadastro desktop" href="#form-page">
-            Receba informações sobre Curitiba
-        </a>
-        <a class="cadastro mobile" href="#form-page">
-            + Informações
-        </a>
-
-        <i class="fa fa-arrow-right fa-lg cadastro-arrow"></i>
     </footer>
 
-    <main class="modal_container" id="form-page">
-        <section class="modal">
-            <a href="#"><span class="close eh" title="Fechar">Fechar</span></a>
-            <h2 class="modal__title">Cadastro</h2>
-            <p class="modal__descri">Preencha esse formulário para receber mais informações sobre Curitiba, de acordo
-                com seu interesse:</p>
-            <form class="form_cadastro">
-                <label for="nome">Nome</label>
-                <input class="eh" type="text" name="nome" id="nome" placeholder="Informe seu nome" maxlength="100">
-
-                <label for="email">E-mail</label>
-                <input class="eh" type="email" name="email" id="email"
-                    placeholder="Informe seu e-mail, exemplo: email@gmail.com">
-
-                    <div class="input_group">
-                    <div class="input_item">
-                        <label for="telefone">Whatsapp</label>
-                        <input class="eh" type="tel" name="telefone" id="telefone" placeholder="11 99999-9999 "
-                            pattern="[0-9]{2}[0-9]{5}-[0-9]{4}">
-                    </div>
-                    <div class="input_item">
-                        <label for="nascimento">Data de Nascimento</label>
-                        <input class="eh" type="date" name="nascimento" id="nascimento">
-                    </div>
-                </div>
-
-                <div id="maioridade_group">
-                    <input class="eh-2" type="radio" name="maioridade" id="maioridade_sim">
-                    <label for="maioridade_sim">Tenho mais de 18 anos</label>
-                    <input class="eh-2" type="radio" name="maioridade" id="maioridade_nao">
-                    <label for="maioridade_nao">Sou menor de idade</label>
-                </div>
-
-                <label for="pontos">Pontos de interesse em Curitiba</label>
-                <select class="eh" name="pontos" id="pontos">
-                    <option value="0">Selecione um ponto de interesse</option>
-                    <option value="1">Parques</option>
-                    <option value="2">Praças</option>
-                    <option value="3">Bares</option>
-                    <option value="4">Gastronomia</option>
-                    <option value="5">Noite Curitibana</option>
-                </select>
-
-                <label for="interesse">Interesses: </label>
-                <div id="interesse_group">
-                    <input class="eh-2" type="checkbox" name="interesse" id="residente">
-                    <label for="residente">Residência</label>
-                    <input class="eh-2" type="checkbox" name="interesse" id="estudante">
-                    <label for="estudante">Estudos</label>
-                    <input class="eh-2" type="checkbox" name="interesse" id="turista">
-                    <label for="turista">Turismo</label>
-                    <input class="eh-2" type="checkbox" name="interesse" id="trabalho">
-                    <label for="trabalho">Trabalho</label>
-                </div>
-
-                <div class="buttons">
-                    <button class="btn btn-submit eh" title="Enviar Cadastro" type="submit">Enviar</button>
-                    <button class="btn btn-reset eh" title="Limpar Campos" type="reset">Limpar</button>
-                </div>
-            </form>
-        </section>
-    </main>
 </body>
-
 </html>

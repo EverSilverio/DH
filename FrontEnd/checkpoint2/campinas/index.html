@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Cidade</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bc6b3edade.js" crossorigin="anonymous"></script>
+    <!--Adicione o pacote de ícones do site da Font Awesome -->
+</head>
+
+<body>
+
+    <header>
+        <h1 class="title">Campinas</h1>
+        <h2>Município em São Paulo</h2>
+    </header>
+
+    <div class="main">
+        <div class="text">
+            <p>Campinas é uma cidade no sudeste brasileiro, a noroeste de São Paulo.</p>
+            <p>A sua <strong>Catedral Metropolitana</strong> possui um interior em madeira de jacarandá e um museu de
+                arte sacra.</p>
+            <p>A <strong>Torre do Castelo</strong>, anteriormente uma torre de água, proporciona vistas panorâmicas.</p>
+            <p>No norte, o <strong>Parque Portugal</strong> inclui um planetário e elétricos restaurados de inícios do
+                <strong>século XX</strong>.
+            </p>
+            <p>Na extremidade do parque, o <strong>Museu do Café</strong> recorda a história da cidade enquanto
+                produtora de café.</p>
+            <a href="#formulario">Preencha o Formulario</a>
+        </div>
+
+        <div class="video">
+            <iframe width="100%" src="https://www.youtube.com/embed/igxohyL9bAo"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <div class="icons">
+            <a href="https://www.instagram.com/visitecampinas/" target="_blank" title="Link do Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://www.youtube.com/channel/UCviZXayY-C1pw5L6-muS5Tw" target="_blank"
+                title="Link para Canal no YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </div>
+
+    <div id="formulario">
+        <div class="modal">
+            <a class="close" href="#">Fechar</a>
+            <div class="principal">
+                <h1>Formulário</h1>
+                <form class="form">
+                    <label for="nome1">Nome</label>
+                    <input class="eh" type="text" name="nome1" id="name" maxlength="100" placeholder="Informe seu nome">
+
+                    <label for="email1">E-mail</label>
+                    <input class="eh" type="email" name="email1" id="email" placeholder="email@email.com.br">
+
+                    <label for="telefone1">Telefone</label>
+                    <input class="eh" type="tel" name="telefone1" id="telefone" placeholder="11 99999-9999"
+                    pattern="[0-9]{2}[0-9]{5}-[0-9]{4}">
+
+                    <label for="datadeaniversario1">Data de Aniversário</label>
+                    <input class="eh" type="date" name="datadeaniversario1" id="datadeaniversario">
+
+                    <div class="input_group">
+                        <input class="eh-2" type="radio" name="idade"  id="idade1">
+                        <label for="idade1">Maior de 18 anos</label>
+                        <input class="eh-2" type="radio" id="idade2" name="idade">
+                        <label for="idade2">Menor de 18 anos</label>
+                    </div>
+
+                    <label for="interesses">Quais seus interesses na cidade:</label>
+                    <div class="input_group">
+                        <input class="eh-2" type="checkbox" id="interesse2" name="interesse2" value="interesse">
+                        <label for="interesse2">Turista</label>
+                        <input class="eh-2" type="checkbox" id="interesse3" name="interesse3" value="interesse">
+                        <label for="interesse3">Residente</label>
+                        <input class="eh-2" type="checkbox" id="interesse4" name="interesse4" value="interesse">
+                        <label for="interesse4">Estudante</label>
+                        <input class="eh-2" type="checkbox" id="interesse5" name="interesse5" value="interesse">
+                        <label for="interesse5">Trabalho</label>
+                    </div>
+
+                    <label>Ponto de Interesse da Cidade:</label>
+                    <select class="eh" id="cidade">
+                        <option>Parque Portugual</option>
+                        <option>Torre do Castelo</option>
+                        <option>Praça Arautos da Paz</option>
+                        <option>Pedreira do Chapadão</option>
+                        <option>Bosque dos Jequitibás</option>
+                        <option>Observatório de Capricórnio Municipal</option>
+                        <option>Maria Fumaça</option>
+                        <option>Bares da Cidade</option>
+                    </select>
+
+                    <div class="buttons">
+                        <button class="btn" tape="reset">Limpar</button>
+                        <button class="btn" tape="submit">Enviar</button>
+                    </div>
+
+                </form>
+                <div>
+                </div>
+            </div>
+
+</body>
+
+</html>
