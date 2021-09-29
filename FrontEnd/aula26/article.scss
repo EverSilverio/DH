@@ -1,0 +1,17 @@
+$color: #E70040;
+$backgroundColor: #FFB832;
+$height: 100vh;
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: $height;
+    color: $color;
+    background-color: $backgroundColor;
+    p {
+        color: #E70040;
+        font-size: 2em;
+    }
+}
+

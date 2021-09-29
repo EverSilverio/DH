@@ -1,0 +1,12 @@
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #E70040;
+  background-color: #FFB832;
+}
+article p {
+  color: #E70040;
+  font-size: 2em;
+}/*# sourceMappingURL=article.css.map */

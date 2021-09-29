@@ -1,0 +1,10 @@
+header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 70px;
+  color: #FDFEF0;
+  background-color: #FE007E;
+}/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,16 @@
+$color: #FDFEF0;
+$backgroundColor: #E70040;
+$justifyContent: center;
+$pTop: 10px;
+
+footer {
+    display: flex;
+    justify-content: $justifyContent;
+    padding-top: $pTop;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 40px;
+    color: $color;
+    background-color: $backgroundColor;
+}

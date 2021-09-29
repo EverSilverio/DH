@@ -1,0 +1,14 @@
+$color: #FDFEF0;
+$backgroundColor: #FE007E;
+$alignItems: center;
+
+header {
+    display: flex;
+    align-items: $alignItems;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 70px;
+    color: $color;
+    background-color: $backgroundColor;
+}

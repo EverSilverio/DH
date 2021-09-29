@@ -1,0 +1,42 @@
+header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 70px;
+  color: #FDFEF0;
+  background-color: #FE007E;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 40px;
+  color: #FDFEF0;
+  background-color: #E70040;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #E70040;
+  background-color: #FFB832;
+}
+article p {
+  color: #E70040;
+  font-size: 2em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}/*# sourceMappingURL=main.css.map */

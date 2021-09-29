@@ -1,0 +1,11 @@
+footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 40px;
+  color: #FDFEF0;
+  background-color: #E70040;
+}/*# sourceMappingURL=footer.css.map */

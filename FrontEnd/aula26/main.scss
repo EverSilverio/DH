@@ -1,0 +1,14 @@
+@import 'header.scss';
+@import 'footer.scss';
+@import 'article.scss';
+
+@mixin reset {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+* {
+    @include reset;
+}
