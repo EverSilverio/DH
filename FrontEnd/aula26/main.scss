@@ -1,6 +1,6 @@
-@import 'header.scss';
-@import 'footer.scss';
-@import 'article.scss';
+@import 'components/header.scss';
+@import 'components/footer.scss';
+@import 'components/article.scss';
 
 @mixin reset {
     margin: 0;
