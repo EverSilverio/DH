@@ -7,7 +7,6 @@ function Estudante (nome, faltas, notas){
         for(let i = 0; i < this.notas.length; i++) {
             soma += this.notas[i];
         }
-
         return soma / this.notas.length;
     }
 

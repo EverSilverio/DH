@@ -9,34 +9,28 @@ let curso = {
         new Estudante('Niara', 0, [9.5, 8, 9, 10]),
         new Estudante('Everton', 1, [5, 7, 6, 6]),
         new Estudante('Felipe', 5, [10, 10, 7, 8]),
-        new Estudante('Gessyka', 3, [10, 9, 8, 9]),
+        new Estudante('Gessyka', 6, [10, 9, 8, 9]),
         new Estudante('Andrey', 4, [7, 10, 9, 7])
     ],
     adicionaAluno: function (aluno) {
         this.lista.push(aluno);
     },
     aprovado: function (aluno) {
-        let estudante;
+        let est;
         for (let i = 0; i < this.lista.length; i++) {
             if (this.lista[i].nome == aluno) {
-                estudante = this.lista[i];
+                est = this.lista[i];
             }
         }
 
-        let media = estudante.calcularMedia();
+        let media = est.calcularMedia();
 
-        if (
-            media >= this.notaMin &&
-            estudante.faltas < this.faltaMax
-        ) {
-            return true
-        } else if (
-            (media * 1.1) >= this.notaMin &&
-            estudante.faltas == this.faltaMax)
-        {
-            return true
-        } 
-        
+        let aprovadoMedia = (media >= this.notaMin) && (est.faltas < this.faltaMax);
+        let aprovadoRespescagem = ((media * 1.1) >= this.notaMin) && (est.faltas == this.faltaMax);
+
+        if (aprovadoMedia || aprovadoRespescagem)
+            return true;
+                
         return false;
     },
     alunosAprovados: function(){
@@ -46,25 +40,19 @@ let curso = {
     }
 }
 
+// atualza lista com novaLista importada
 curso.lista = novaLista;
 
-
-console.log(curso);
-
-// passar um aluno como parametro
-// verificar se ele tem nota >= notaMIn
-// verificar se ele tem <= faltaMax
-// se a nota for >= faltaMax e nota = notaMin + 10%
-
+// adiciona novos alunos
 curso.adicionaAluno(new Estudante('Marcos', 2, [10, 8, 9, 7]));
 curso.adicionaAluno(new Estudante('Bicudo', 0, [10, 8, 9, 7]));
 
-// console.log(curso.lista);
-
-if (curso.aprovado('Felipe')) {
+// verificar se um aluno foi aprovado ou não
+if (curso.aprovado('Gessyka')) {
     console.log('Aprovado');
 } else {
     console.log('Nao Aprovado');
 }
 
+// imprime lista de booleanos de aprovacao
 console.log(curso.alunosAprovados());
