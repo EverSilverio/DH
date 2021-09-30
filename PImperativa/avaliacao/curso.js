@@ -16,15 +16,9 @@ let curso = {
         this.lista.push(aluno);
     },
     aprovado: function (aluno) {
-        let est;
-        for (let i = 0; i < this.lista.length; i++) {
-            if (this.lista[i].nome == aluno) {
-                est = this.lista[i];
-            }
-        }
+        let est = this.lista.filter((el, i) => (el.nome == aluno))[0];
 
         let media = est.calcularMedia();
-
         let aprovadoMedia = (media >= this.notaMin) && (est.faltas < this.faltaMax);
         let aprovadoRespescagem = ((media * 1.1) >= this.notaMin) && (est.faltas == this.faltaMax);
 
@@ -48,7 +42,7 @@ curso.adicionaAluno(new Estudante('Marcos', 2, [10, 8, 9, 7]));
 curso.adicionaAluno(new Estudante('Bicudo', 0, [10, 8, 9, 7]));
 
 // verificar se um aluno foi aprovado ou não
-if (curso.aprovado('Gessyka')) {
+if (curso.aprovado('Pedro')) {
     console.log('Aprovado');
 } else {
     console.log('Nao Aprovado');

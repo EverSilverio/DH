@@ -3,13 +3,9 @@ function Estudante (nome, faltas, notas){
     this.faltas = faltas;
     this.notas = notas;
     this.calcularMedia = function(){
-        let soma = 0;
-        for(let i = 0; i < this.notas.length; i++) {
-            soma += this.notas[i];
-        }
+        let soma = this.notas.reduce((arr, el) => arr + el);
         return soma / this.notas.length;
     }
-
     this.ausente = function(){
         this.faltas++;
     }    
