@@ -1,0 +1,33 @@
+
+/* classes bootstrap */
+
+.t-shadow {
+    text-shadow: 0 2px 5px #000;
+}
+
+#banner1 {
+    position: relative;
+    background: url(img/dark.jpeg) center center fixed no-repeat;
+    background-size: cover;
+}
+#banner2 {
+    position: relative;
+    background: url(img/cards/nevermind-1991.jpg) fixed no-repeat;
+    background-size: cover;
+}
+#banner3 {  
+    position: relative;
+    background: url(img/ten.png) fixed no-repeat;
+    background-size: cover;
+}
+
+.card {
+    background-color: #333;
+    border: 1px solid rgba(255,255,255,.12);
+    transition-duration: .3s;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px 3px rgba(255,255,255,.4);
+    transform: scale(1.1);
+}
