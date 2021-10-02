@@ -14,7 +14,7 @@ Essa etapa do curso é onde você vai usar todo seu conhecimento adquirido até 
 
 > Esse projeto apesar de ter um tema que será definido pelo grupo, deverá cumprir algumas exigências.
 
-- [] Todo o trabalho tem de ser entregue no github, o link do repositório também precisa ser disponibilizado diretamente no formulário: https://forms.gle/kEbi6ff7kGMkEuA87;
+- [ ] Todo o trabalho tem de ser entregue no github, o link do repositório também precisa ser disponibilizado diretamente no formulário: https://forms.gle/kEbi6ff7kGMkEuA87;
 - [x] O banner deve ter o efeito parallax, (pesquise por background-attachment);
 - [ ] O head deve variar de acordo com a página atual. Ex: Na página do filme peter pan ficaria: DH Flix | Peter Pan;
 - [x] Header deve conter 5 itens além da logo. Cada item deve linkar com uma parte do site ou uma página externa;
