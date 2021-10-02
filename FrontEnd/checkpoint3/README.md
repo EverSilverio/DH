@@ -30,3 +30,13 @@ Essa etapa do curso é onde você vai usar todo seu conhecimento adquirido até 
         ver: Vertically centered
         Add .modal-dialog-centered to .modal-dialog to vertically center the modal.
 - [ ] Todo o site deve estar responsivo.
+
+Pendencias:
+- [ ] O banner tem de ter um botão e uma breve descrição do site;
+  -> atualizar descricao
+
+- [ ] Seu site tem de ter uma página de detalhes para cada item listado onde haverá uma explicação sobre o mesmo. 
+  -> montar as paginas de detalhes
+
+- [ ] Formulário de login, cujo acesso é feito no header;
+  -> montar modal igual ao formato que usamos no checkpoint2 com modelo de formulario login do bootstrap
