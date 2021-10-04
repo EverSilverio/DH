@@ -31,6 +31,11 @@ Essa etapa do curso é onde você vai usar todo seu conhecimento adquirido até 
 - [x] Formulário de login, cujo acesso é feito no header;
 - [x] Todo o site deve estar responsivo.
 
+## PROJETO
+
+![logo-removebg](https://user-images.githubusercontent.com/5773748/135780670-ba5b4c48-1d47-45d5-95ff-c64adaf39ba5.png)
+
+
 ## SCREEN SHOTS
 
 ### Desktop
