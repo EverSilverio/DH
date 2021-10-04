@@ -2,6 +2,8 @@
 
 > Entrega 05/10
 
+> Equipe: Ederson | Everton | Fabiana | Karina
+
 ---
 
 ## Objetivo
