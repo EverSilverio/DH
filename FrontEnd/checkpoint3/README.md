@@ -28,3 +28,21 @@ Essa etapa do curso é onde você vai usar todo seu conhecimento adquirido até 
 - [x] Seu site tem de ter uma página de detalhes para cada item listado onde haverá uma explicação sobre o mesmo. 
 - [x] Formulário de login, cujo acesso é feito no header;
 - [x] Todo o site deve estar responsivo.
+
+## SCREEN SHOTS
+
+### Desktop
+
+![image](https://user-images.githubusercontent.com/88685345/135779409-164d0532-281f-4044-933c-96f0147ce6ca.png)
+
+![image](https://user-images.githubusercontent.com/88685345/135779432-c1134314-36dd-48c6-9192-dfd34b8e0eef.png)
+
+![image](https://user-images.githubusercontent.com/88685345/135779452-0a10a411-cc6e-4971-9331-c8f01bb94739.png)
+
+### Mobile
+
+![image](https://user-images.githubusercontent.com/88685345/135779474-2a45d34c-3c1e-4501-ba34-92cf3c00ec4d.png)
+
+![image](https://user-images.githubusercontent.com/88685345/135779499-20ad78b9-c0ed-4c93-a5a7-185d06af35e4.png)
+
+
