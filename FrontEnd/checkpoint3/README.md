@@ -35,6 +35,8 @@ Essa etapa do curso é onde você vai usar todo seu conhecimento adquirido até 
 
 ![logo-removebg](https://user-images.githubusercontent.com/5773748/135780670-ba5b4c48-1d47-45d5-95ff-c64adaf39ba5.png)
 
+[![image](https://user-images.githubusercontent.com/5773748/135848678-96fe3028-f93f-4773-8a32-1e02ab4f3f45.png)](https://eversilverio.github.io/DH/FrontEnd/checkpoint3/)
+
 
 ## SCREEN SHOTS
 
