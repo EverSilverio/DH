@@ -1,300 +1,355 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-b">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="img/favicon.png" />
 
-    <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
 
-    <title>Checkpoint_III</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <title>BestPlayMusic | Dê um play na playlist da sua vida</title>
 </head>
 
-<body>
-    <main class="container-fluid bg-dark bg-gradient p-0">
-        <!-- header -->
-        <header class="container-fluid p-0 fixed-top">
-            <ul class="nav d-flex bg-dark bg-gradient">
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#carouselExampleIndicators">LOGO</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light active" href="#cards">Albuns Mais Tocados</a>
-                </li>
-                
-                <li class="nav-item ms-auto">
-                    <div class="d-flex justify-content-between">
-                        <a class="nav-link text-light" href="https://music.youtube.com/" target="_blank"><i class="bi bi-youtube"></i></a>
-                        <a class="nav-link text-light" href="https://www.instagram.com/aradiorock/" target="_blank"><i class="bi bi-instagram"></i></a>
-                        <a class="nav-link text-light" href="https://www.facebook.com/radiorockoficial" target="_blank"><i class="bi bi-facebook"></i></a>
-                        <a class="nav-link text-light" href="#"><i class="bi bi-person-circle"></i></a>
-                    </div>
-                </li>
-            </ul>
-        </header>
-        <!-- /header -->
+<body class="bg-dark bg-gradient">
+  <!-- main -->
+  <main class="container-fluid p-0">
+    <!-- header -->
+    <header class="container-fluid p-0 fixed-top opacity-75">
+      <ul class="nav d-flex align-items-center bg-dark bg-gradient">
+        <li class="nav-item logo">
+          <a class="nav-link text-light d-flex align-items-center" href="#banner-carousel">
+            <img class="iconlogo" src="img/logo.png" alt="icon"><span class="f-logo">Best<span class="text-warning">Play</span>Music</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light btn-effect" title="Acesse a lista de álbuns mais tocados" href="#cards">Mais Tocados</a>
+        </li>
 
-        <!-- banner carousel -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div id="banner1" class="carousel-item active vh-100">
-                    <div class="container position-absolute bottom-0 left-0 m-3">
-                        <h1 class="text-white t-shadow">The Dark Side Of The Moon - Pink Floyd</h1>
-                        <p class="text-white t-shadow">Uma breve descrição sobre o álbum e seu lançamento</p>
-                    </div>
-                </div>
-                <div id="banner2" class="carousel-item vh-100">
-                    <div class="container position-absolute bottom-0 left-0 m-3">
-                        <h1 class="text-white t-shadow">Nevermind - Nirvana</h1>
-                        <p class="text-white t-shadow">Uma breve descrição sobre o álbum e seu lançamento</p>
-                    </div>
-                </div>
-                <div id="banner3" class="carousel-item vh-100">
-                    <div class="container position-absolute bottom-0 left-0 m-3">
-                        <h1 class="text-white t-shadow">Ten - Pearl Jam</h1>
-                        <p class="text-white t-shadow">Uma breve descrição sobre o álbum e seu lançamento</p>
-                    </div>                    
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon bg-danger" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon bg-danger" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+        <li class="nav-item ms-auto">
+          <div class="d-flex justify-content-between">
+            <a class="nav-link text-light btn-effect" title="Acesse YoutubeMusic" href="https://music.youtube.com/"
+              target="_blank"><i class="bi bi-youtube"></i></a>
+            <a class="nav-link text-light btn-effect" title="Acesse o instagram da RadioRock"
+              href="https://www.instagram.com/aradiorock/" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a class="nav-link text-light btn-effect" title="Acesse o Facebook da RadioRock"
+              href="https://www.facebook.com/radiorockoficial" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a class="nav-link text-light btn-effect" title="Acesse a tela de login" href="#modal-form"><i
+                class="bi bi-person-circle"></i></a>
+          </div>
+        </li>
+      </ul>
+    </header>
+    <!-- /header -->
+
+    <!-- banner carousel -->
+    <div id="banner-carousel" class="carousel slide " data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#banner-carousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#banner-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#banner-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+
+        <div id="banner1" class="carousel-item active vh-100 position-relative">
+          <div class="container position-absolute bottom-0 left-0 m-3" style="margin-bottom: 50px;">
+            <h1 class="text-white t-shadow">The Dark Side Of The Moon - Pink Floyd</h1>
+            <p class="text-white t-shadow">
+              The Dark Side of the Moon é o oitavo álbum de estúdio da banda
+              britânica de rock progressivo Pink Floyd, lançado em 1 de
+              março de 1973. The Dark Side of the Moon foi um sucesso imediato, chegando ao
+              topo da Billboard 200 nos Estados Unidos.
+            </p>
+            <a class="btn-carousel btn btn-outline-light" href="albuns/darkside.html">Acesse o Álbum</a>
+          </div>
+        </div>        
+
+        <div id="banner2" class="carousel-item vh-100 position-relative">
+          <div class="container position-absolute bottom-0 left-0 m-3">
+            <h1 class="text-white t-shadow">Nevermind - Nirvana</h1>
+            <p class="text-white t-shadow">
+              Nevermind é o segundo álbum de estúdio da banda grunge estadunidense Nirvana, lançado em 24 de setembro de 1991.
+              Produzido por Butch Vig, foi o primeiro álbum lançado pela DGC Records. Apesar da baixa expectativa de vendas
+              por parte da banda e da gravadora, Nevermind se tornou um surpreendente sucesso ao final de 1991.
+            </p>
+            <a class="btn-carousel btn btn-outline-light" href="albuns/nirvana_nevermind.html">Acesse o Álbum</a>
+          </div>
         </div>
-        <!-- /carousel      -->
 
-        <!-- cards -->
-        <div id="cards" class="container-fluid py-4">
-            <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4 row-cols-xl-6 g-3">
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body p-1">
-                            <p class="card-text mb-0">
-                                <span class="badge bg-danger bg-gradient text-wrap">Metalica</span>
-                                <span class="badge bg-success bg-gradient text-wrap">1985</span>
-                            </p>
-                        </div>
-                        <img src="img/cards/album1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body p-1">
-                            <p class="card-text mb-0">
-                                <span class="badge bg-warning bg-gradient text-wrap text-dark">Load</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body p-1">
-                            <p class="card-text mb-0">
-                                <span class="badge bg-danger bg-gradient text-wrap">Pearl Jam</span>
-                                <span class="badge bg-success bg-gradient text-wrap">1991</span>
-                            </p>
-                        </div>
-                        <img src="img/cards/Pearl-Jam-Ten-1991.jpg" class="card-img-top" alt="...">
-                        <div class="card-body p-1">
-                            <p class="card-text mb-0">
-                                <span class="badge bg-warning bg-gradient text-wrap text-dark">Ten</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body p-1">
-                            <p class="card-text mb-0">
-                                <span class="badge bg-danger bg-gradient text-wrap">Led Zeppelin</span>
-                                <span class="badge bg-success bg-gradient text-wrap">1971</span>
-                            </p>
-                        </div>
-                        <img src="img/cards/220px-LedZeppelinIV.jpg" class="card-img-top" alt="...">
-                        <div class="card-body p-1">
-                            <p class="card-text mb-0">
-                                <span class="badge bg-warning bg-gradient text-wrap text-dark">Led Zeppelin IV</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body p-1">
-                            <p class="card-text mb-0">
-                                <span class="badge bg-danger bg-gradient text-wrap">AC/DC</span>
-                                <span class="badge bg-success bg-gradient text-wrap">1991</span>
-                            </p>
-                        </div>
-                        <img src="img/cards/nevermind-1991.jpg" class="card-img-top" alt="...">
-                        <div class="card-body p-1">
-                            <p class="card-text mb-0">
-                                <span class="badge bg-warning bg-gradient text-wrap text-dark">Nevermind</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body p-1">
-                            <p class="card-text mb-0">
-                                <span class="badge bg-danger bg-gradient text-wrap">Nirvana</span>
-                                <span class="badge bg-success bg-gradient text-wrap">1980</span>
-                            </p>
-                        </div>
-                        <img src="img/cards/220px-Back_in_Black.jpg" class="card-img-top" alt="...">
-                        <div class="card-body p-1">
-                            <p class="card-text mb-0">
-                                <span class="badge bg-warning bg-gradient text-wrap text-dark">Back in Black</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body p-1">
-                            <p class="card-text mb-0">
-                                <span class="badge bg-danger bg-gradient text-wrap">NOFX</span>
-                                <span class="badge bg-success bg-gradient text-wrap">1996</span>
-                            </p>
-                        </div>
-                        <img src="img/cards/nofx.jpg" class="card-img-top" alt="...">
-                        <div class="card-body p-1">
-                            <p class="card-text mb-0">
-                                <span class="badge bg-warning bg-gradient text-wrap text-dark">Heavy Petting Zoo</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body p-1">
-                            <p class="card-text mb-0">
-                                <span class="badge bg-danger bg-gradient text-wrap">Pink Floyd</span>
-                                <span class="badge bg-success bg-gradient text-wrap">1975</span>
-                            </p>
-                        </div>
-                        <img src="img/cards/wish_you_where_here_1975_.jpg" class="card-img-top" alt="...">
-                        <div class="card-body p-1">
-                            <p class="card-text mb-0">
-                                <span class="badge bg-warning bg-gradient text-wrap text-dark">Wish You where
-                                    Here</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body p-1">
-                            <p class="card-text mb-0">
-                                <span class="badge bg-danger bg-gradient text-wrap">Eagles</span>
-                                <span class="badge bg-success bg-gradient text-wrap">1976</span>
-                            </p>
-                        </div>
-                        <img src="img/cards/hotel_california.png" class="card-img-top" alt="...">
-                        <div class="card-body p-1">
-                            <p class="card-text mb-0">
-                                <span class="badge bg-warning bg-gradient text-wrap text-dark">Hotel California</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body p-1">
-                            <p class="card-text mb-0">
-                                <span class="badge bg-danger bg-gradient text-wrap">Pink Floyd</span>
-                                <span class="badge bg-success bg-gradient text-wrap">1973</span>
-                            </p>
-                        </div>
-                        <img src="img/cards/Dark_Side_of_the_Moon-1973.png" class="card-img-top" alt="...">
-                        <div class="card-body p-1">
-                            <p class="card-text mb-0">
-                                <span class="badge bg-warning bg-gradient text-wrap text-dark">Dark Side Of The Moon</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body p-1">
-                            <p class="card-text mb-0">
-                                <span class="badge bg-danger bg-gradient text-wrap">Beatles</span>
-                                <span class="badge bg-success bg-gradient text-wrap">1967</span>
-                            </p>
-                        </div>
-                        <img src="img/cards/Sgt_Peppers.jpg" class="card-img-top" alt="...">
-                        <div class="card-body p-1">
-                            <p class="card-text mb-0">
-                                <span class="badge bg-warning bg-gradient text-wrap text-dark">Sgt Pepper's Lonely Hearts Club Band</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>                
-                
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body p-1">
-                            <p class="card-text mb-0">
-                                <span class="badge bg-danger bg-gradient text-wrap">Lynyrd Skynyrd</span>
-                                <span class="badge bg-success bg-gradient text-wrap">1973</span>
-                            </p>
-                        </div>
-                        <img src="img/cards/Pronounced_Leh_Nerd_Skin_Nerd.jpg" class="card-img-top" alt="...">
-                        <div class="card-body p-1">
-                            <p class="card-text mb-0">
-                                <span class="badge bg-warning bg-gradient text-wrap text-dark">Pronounced'Leh-Nerd Skin-Nerd</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>                   
-
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body p-1">
-                            <p class="card-text mb-0">
-                                <span class="badge bg-danger bg-gradient text-wrap">Dead Kennedys</span>
-                                <span class="badge bg-success bg-gradient text-wrap">1973</span>
-                            </p>
-                        </div>
-                        <img src="img/cards/DeadKennedys-Give.jpg" class="card-img-top" alt="...">
-                        <div class="card-body p-1">
-                            <p class="card-text mb-0">
-                                <span class="badge bg-warning bg-gradient text-wrap text-dark">Give Me Convenience Or Give Death</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>                   
-
-            </div>
+        <div id="banner3" class="carousel-item vh-100 position-relative">
+          <div class="container position-absolute bottom-0 left-0 m-3">
+            <h1 class="text-white t-shadow">Ten - Pearl Jam</h1>
+            <p class="text-white t-shadow">
+              Ten é o álbum de estreia da banda grunge americana Pearl Jam, lançado em 27 de agosto de 1991 através da Epic Records. Após a saída do baixista Jeff Ament e do guitarrista Stone Gossard de seu grupo anterior Mother Love Bone, os dois recrutaram o vocalista Eddie Vedder, o guitarrista Mike McCready e o baterista Dave Krusen para formar o Pearl Jam em 1990.
+            </p>
+            <a class="btn-carousel btn btn-outline-light" href="albuns/pearljam.html">Acesse o Álbum</a>
+          </div>
         </div>
-    </main>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#banner-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#banner-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- /carousel      -->
+
+    <!-- cards -->
+    <div id="cards" class="container-fluid pb-4">
+      <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4 row-cols-xl-6 g-3">
+        <div class="col">
+          <a class="card card-album" href="albuns/metalica_load_1985.html">
+            <div class="card-body p-1">
+              <p class="card-text mb-0">
+                <span class="badge bg-danger bg-gradient text-wrap">Metalica</span>
+                <span class="badge bg-success bg-gradient text-wrap">1996</span>
+              </p>
+            </div>
+            <img src="img/cards/album1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body p-1">
+              <p class="card-text mb-0">
+                <span class="badge bg-warning bg-gradient text-wrap text-dark">Load</span>
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <a class="card card-album" href="albuns/pearljam.html">
+            <div class="card-body p-1">
+              <p class="card-text mb-0">
+                <span class="badge bg-danger bg-gradient text-wrap">Pearl Jam</span>
+                <span class="badge bg-success bg-gradient text-wrap">1981</span>
+              </p>
+            </div>
+            <img src="img/cards/Pearl-Jam-Ten-1991.jpg" class="card-img-top" alt="..." />
+            <div class="card-body p-1">
+              <p class="card-text mb-0">
+                <span class="badge bg-warning bg-gradient text-wrap text-dark">Ten</span>
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <a class="card card-album" href="albuns/led_zepellin_IV.html">
+            <div class="card-body p-1">
+              <p class="card-text mb-0">
+                <span class="badge bg-danger bg-gradient text-wrap">Led Zeppelin</span>
+                <span class="badge bg-success bg-gradient text-wrap">1971</span>
+              </p>
+            </div>
+            <img src="img/cards/220px-LedZeppelinIV.jpg" class="card-img-top" alt="..." />
+            <div class="card-body p-1">
+              <p class="card-text mb-0">
+                <span class="badge bg-warning bg-gradient text-wrap text-dark">IV</span>
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <a class="card card-album" href="albuns/nirvana_nevermind.html">
+            <div class="card-body p-1">
+              <p class="card-text mb-0">
+                <span class="badge bg-danger bg-gradient text-wrap">Nirvana</span>
+                <span class="badge bg-success bg-gradient text-wrap">1991</span>
+              </p>
+            </div>
+            <img src="img/cards/nevermind-1991.jpg" class="card-img-top" alt="..." />
+            <div class="card-body p-1">
+              <p class="card-text mb-0">
+                <span class="badge bg-warning bg-gradient text-wrap text-dark">Nevermind</span>
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <a class="card card-album" href="albuns/acdc_backinblack.html">
+            <div class="card-body p-1">
+              <p class="card-text mb-0">
+                <span class="badge bg-danger bg-gradient text-wrap">AC/DC</span>
+                <span class="badge bg-success bg-gradient text-wrap">1980</span>
+              </p>
+            </div>
+            <img src="img/cards/220px-Back_in_Black.jpg" class="card-img-top" alt="..." />
+            <div class="card-body p-1">
+              <p class="card-text mb-0">
+                <span class="badge bg-warning bg-gradient text-wrap text-dark">Back in Black</span>
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <a class="card card-album" href="albuns/nofx_hpz.html">
+            <div class="card-body p-1">
+              <p class="card-text mb-0">
+                <span class="badge bg-danger bg-gradient text-wrap">NOFX</span>
+                <span class="badge bg-success bg-gradient text-wrap">1996</span>
+              </p>
+            </div>
+            <img src="img/cards/nofx.jpg" class="card-img-top" alt="..." />
+            <div class="card-body p-1">
+              <p class="card-text mb-0">
+                <span class="badge bg-warning bg-gradient text-wrap text-dark">Heavy Petting Zoo</span>
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <a class="card card-album" href="albuns/pinkfloyd.html">
+            <div class="card-body p-1">
+              <p class="card-text mb-0">
+                <span class="badge bg-danger bg-gradient text-wrap">Pink Floyd</span>
+                <span class="badge bg-success bg-gradient text-wrap">1975</span>
+              </p>
+            </div>
+            <img src="img/cards/wish_you_where_here_1975_.jpg" class="card-img-top" alt="..." />
+            <div class="card-body p-1">
+              <p class="card-text mb-0">
+                <span class="badge bg-warning bg-gradient text-wrap text-dark">Wish You Where Here</span>
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <a class="card card-album" href="albuns/eagles.html">
+            <div class="card-body p-1">
+              <p class="card-text mb-0">
+                <span class="badge bg-danger bg-gradient text-wrap">Eagles</span>
+                <span class="badge bg-success bg-gradient text-wrap">1976</span>
+              </p>
+            </div>
+            <img src="img/cards/hotel_california.png" class="card-img-top" alt="..." />
+            <div class="card-body p-1">
+              <p class="card-text mb-0">
+                <span class="badge bg-warning bg-gradient text-wrap text-dark">Hotel California</span>
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <a class="card card-album" href="albuns/darkside.html">
+            <div class="card-body p-1">
+              <p class="card-text mb-0">
+                <span class="badge bg-danger bg-gradient text-wrap">Pink Floyd</span>
+                <span class="badge bg-success bg-gradient text-wrap">1973</span>
+              </p>
+            </div>
+            <img src="img/cards/Dark_Side_of_the_Moon-1973.png" class="card-img-top" alt="..." />
+            <div class="card-body p-1">
+              <p class="card-text mb-0">
+                <span class="badge bg-warning bg-gradient text-wrap text-dark">Darkside Of The Moon</span>
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <a class="card card-album" href="albuns/beatles.html">
+            <div class="card-body p-1">
+              <p class="card-text mb-0">
+                <span class="badge bg-danger bg-gradient text-wrap">Beattles</span>
+                <span class="badge bg-success bg-gradient text-wrap">1967</span>
+              </p>
+            </div>
+            <img src="img/cards/220px-Sgt_Peppers.jpg" class="card-img-top" alt="..." />
+            <div class="card-body p-1">
+              <p class="card-text mb-0">
+                <span class="badge bg-warning bg-gradient text-wrap text-dark">Sgt. Pepper's</span>
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <a class="card card-album" href="albuns/lynyrdskynyrd.html">
+            <div class="card-body p-1">
+              <p class="card-text mb-0">
+                <span class="badge bg-danger bg-gradient text-wrap">Lynyrd Skynyrd</span>
+                <span class="badge bg-success bg-gradient text-wrap">1973</span>
+              </p>
+            </div>
+            <img src="img/cards/Pronounced_Leh_Nerd_Skin_Nerd.jpg" class="card-img-top" alt="..." />
+            <div class="card-body p-1">
+              <p class="card-text mb-0">
+                <span class="badge bg-warning bg-gradient text-wrap text-dark">Pronounced Leh-Nerd Skin-Nerd</span>
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <a class="card card-album" href="albuns/deadkennedys.html">
+            <div class="card-body p-1">
+              <p class="card-text mb-0">
+                <span class="badge bg-danger bg-gradient text-wrap">Dead Kennedys</span>
+                <span class="badge bg-success bg-gradient text-wrap">1987</span>
+              </p>
+            </div>
+            <img src="img/cards/220px-Dead_Kennedys.jpg" class="card-img-top" alt="..." />
+            <div class="card-body p-1">
+              <p class="card-text mb-0">
+                <span class="badge bg-warning bg-gradient text-wrap text-dark">Give Me Conv. Or Give Me Death</span>
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- /main -->
+
+  <!-- modal    -->
+  <div id="modal-form" class="fixed-top bottom-0 justify-content-center">
+    <div class="modal-interna bg-dark container-fluid text-white position-relative b-shadow">
+      <a class="fechar btn-close btn-close-white position-absolute top-0 end-0 m-3"
+        href="javascript:history.back()"></a>
+      <form class="formulario">
+        <span class="d-flex align-items-center justify-content-center bg-dark logo-radius b-shadow">
+          <img class="iconlogo" src="img/logo.png" alt="icon">
+          <span class="f-logo">Best<span class="text-warning">Play</span>Music</span>
+        </span>
+        <h2>Login</h2>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Informe seu email">
+          <div id="emailHelp" class="form-text">Exemplo: email@dominio.com.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Senha</label>
+          <input type="password" class="form-control" id="senha" placeholder="Informe sua senha">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Lembrar-me</label>
+        </div>
+        <div class="buttons d-flex justify-content-between g-1" style="gap:10px">
+          <button type="reset" class="btn btn-outline-danger w-100">Limpar</button>
+          <button type="submit" class="btn btn-outline-success w-100">Entrar</button>
+        </div>
+        <a class="text-center mt-3 text-light" href="#">Não tem cadastro? Crie um novo usuário.</a>
+      </form>
+    </div>
+  </div>
+  <!-- /modal -->
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-    crossorigin="anonymous"></script>
+  integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
 </html>

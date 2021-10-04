@@ -1,33 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;500&display=swap');
 
-/* classes bootstrap */
+body {
+    font-family: "Saira Condensed", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.badge {
+    font-weight: normal;
+}
+
+.f-logo {
+    font-family: "Saira Condensed", Arial, Helvetica, sans-serif;
+    font-size: 1.2em
+}
+
+.iconlogo {
+    height: 32px;
+    padding-right: 5px;
+}
+
+.logo {
+    transition: all .5s;
+}
+
+.btn-effect {
+    transition: all .5s;
+}
 
 .t-shadow {
     text-shadow: 0 2px 5px #000;
 }
 
+.b-shadow {
+    box-shadow: 0 0 7px 7px rgb(0 0 0 / 40%)
+}
+
+#banner-carousel {
+    margin-bottom: 10px;
+}
+
 #banner1 {
-    position: relative;
     background: url(img/dark.jpeg) center center fixed no-repeat;
     background-size: cover;
 }
 #banner2 {
-    position: relative;
     background: url(img/nevermind_cover.jpg) fixed no-repeat;
     background-size: cover;
 }
 #banner3 {  
-    position: relative;
-    background: url(img/ten.png) fixed no-repeat;
+    background: url(img/pearl_jam_ten.jpg) fixed no-repeat;
     background-size: cover;
 }
 
-.card {
+#cards {
+    padding-top: 52px;
+}
+
+.card-album {
     background-color: #333;
     border: 1px solid rgba(255,255,255,.12);
+    cursor: pointer;
     transition-duration: .3s;
 }
 
-.card:hover {
+.card-album:hover {
     box-shadow: 0 0 10px 3px rgba(255,255,255,.4);
     transform: scale(1.1);
+}
+
+.card-text {
+    font-size: .8em;
+}
+
+.btn-carousel {
+    position: relative;
+    z-index: 2;
+}
+
+.img-fluid {
+    margin-top: .5rem;
+}
+
+#modal-form {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#modal-form:target {
+    display: flex;
+    align-items: center;
+}
+
+.formulario {
+    display:flex;
+    flex-direction:column;
+}
+
+.modal-interna{
+    width: 500px;
+    padding:30px;
+    border-radius: 10px;
+    margin: 0 10px;
+    min-width: 340px;    
+}
+
+.logo-radius {
+    position: absolute;
+    left: 50%;
+    top: -88px;
+    transform: translate(-50%, 0);
+    border-radius: 50%;
+    height: 175px;
+    width: 175px;
+    outline: solid;
+    outline-color: #FFC107;
+    outline-width: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .nav-link {
+        padding: .6rem .4rem;
+    }
+}
+
+
+@media only screen and (min-width: 576px) {
+    .logo:hover {
+        transform: scale(1.2);
+    }
+    
+    .btn-effect:hover {
+        transform: scale(1.5);
+        color: #ffc107 !important;
+    }
+
+    header .nav {
+        padding-left: .3rem;
+    }
 }
