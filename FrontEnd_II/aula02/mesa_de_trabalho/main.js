@@ -39,10 +39,10 @@ function roundGame(choiseUser, choiseMachine) {
     switch (choiseUser) {
         case 1:
             if (choiseMachine == 2) {
-                message = "Xii, você perdeu!";
+                message = "Xii, você perdeu a rodada!";
                 machinePoint += 1;
             } else if (choiseMachine == 3) {
-                message = "Uau, você ganhou!";
+                message = "Uau, você ganhou a rodada!";
                 userPoint += 1;
             } else {
                 message = "Deu empate"
