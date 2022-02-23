@@ -7,4 +7,4 @@
 3. Empate no jogo, não dá pontuação para nenhum dos jogadores.
 4. Comentar o código e utilizar de qualquer outro recurso para deixá-lo melhor formatado.
 
-> [Clique para testar exemplo](https://eversilverio.github.io/DH/FrontEnd_II/aula02/mesa_de_trabalho/)
+> [Clique para testar exemplo](https://eversilverio.github.io/DH/FrontEnd_II/aula02/mesa_de_trabalho/index.html)
