@@ -13,8 +13,8 @@ function startGame(params) {
 
     // loop que é executado enquanto nenhum jogador atinge 2 pontos (melhor de 3)
     do {
-        let user = userChoise();
-        let machine = machineChoise();
+        let user = userchoice();
+        let machine = machinechoice();
 
         roundGame(user, machine);
     } while (userPoint < 2 && machinePoint < 2);
@@ -23,59 +23,62 @@ function startGame(params) {
 }
 
 // abre prompt para usuário informar sua escolha
-function userChoise() {
-    let choiseUser = parseInt(prompt('Pedra (1) Papel (2) Tesoura (3)'));
-    return choiseUser;
+function userchoice() {
+    let choiceUser = parseInt(prompt('Pedra (1) Papel (2) Tesoura (3)'));
+    return choiceUser;
 }
 
 // calcula randomicamente uma opção para maquina (pedra (1), papel (2) ou tesoura (3))
-function machineChoise() {
-    let choiseMachine = parseInt(Math.random() * 3 + 1);
-    return choiseMachine;
+function machinechoice() {
+    let choiceMachine = parseInt(Math.random() * 3 + 1);
+    return choiceMachine;
 }
 
 // função de cálculo de cada rodada
 // atualiza a pontuação e mostra mensagem da rodada
-function roundGame(choiseUser, choiseMachine) {
-    let message = '';
-    switch (choiseUser) {
-        case 1:
-            if (choiseMachine == 2) {
-                message = "Xii, você perdeu a rodada!";
-                machinePoint += 1;
-            } else if (choiseMachine == 3) {
-                message = "Uau, você ganhou a rodada!";
-                userPoint += 1;
-            } else {
-                message = "Deu empate"
-            }
-            break;
-        case 2:
-            if (choiseMachine == 3) {
-                message = "Xii, você perdeu a rodada!";
-                machinePoint += 1;
-            } else if (choiseMachine == 1) {
-                message = "Uau, você ganhou a rodada!";
-                userPoint += 1;
-            } else {
-                message = "Deu empate"
-            }
-            break;
-        case 3:
-            if (choiseMachine == 1) {
-                message = "Xii, você perdeu a rodada!";
-                machinePoint += 1;
-            } else if (choiseMachine == 2) {
-                message = "Uau, você ganhou a rodada!";
-                userPoint += 1;
-            } else {
-                message = "Deu empate"
-            }
-            break;
-        default:
-            break;
+function roundGame(choiceUser, choiceMachine) {
+    let messageLose = "Xii, você perdeu a rodada!";
+    let messageWin = "Uau, você ganhou a rodada!";
+
+    if (choiceUser === choiceMachine) {
+        alert(`Ambos escolheram ${lista[choiceUser-1]}! \nDeu Empate!`);
+    } else {
+        switch (choiceUser) {
+            case 1:
+                if (choiceMachine == 2) {
+                    alertScreen('machine', choiceUser, choiceMachine, messageLose);
+                } else if (choiceMachine == 3) {
+                    alertScreen('user', choiceUser, choiceMachine, messageWin);
+                }
+                break;
+            case 2:
+                if (choiceMachine == 3) {
+                    alertScreen('machine', choiceUser, choiceMachine, messageLose);
+                } else if (choiceMachine == 1) {
+                    alertScreen('user', choiceUser, choiceMachine, messageWin);
+                }
+                break;
+            case 3:
+                if (choiceMachine == 1) {
+                    alertScreen('machine', choiceUser, choiceMachine, messageLose);
+                } else if (choiceMachine == 2) {
+                    alertScreen('user', choiceUser, choiceMachine, messageWin);
+                }
+                break;
+            default:
+                alert(`Opção escolhida é invalida! \nEscolha corretamente!`)
+        }
     }
-    alert(`Você escolheu ${lista[choiseUser-1]} e a máquina escolheu ${lista[choiseMachine-1]}! \n${message}`)
+}
+
+// funcao alerta
+function alertScreen(winner, choiceUser, choiceMachine, message) {
+    if (winner === 'machine') {
+        machinePoint += 1;
+    } else {
+        userPoint += 1;
+    }
+    alert(`Você escolheu ${lista[choiceUser-1]} e a máquina escolheu ${lista[choiceMachine-1]}! \n${message}`)
 }
 
 // exibe resultado final com base nas variaveis de pontuacao
