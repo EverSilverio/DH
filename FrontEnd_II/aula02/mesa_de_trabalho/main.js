@@ -8,15 +8,9 @@ var machinePoint = 0;
 
 // função de inicio de jogo - chamada pelo botao "Iniciar Jogo"
 function startGame(params) {
-    userPoint = 0;
-    machinePoint = 0;
-
     // loop que é executado enquanto nenhum jogador atinge 2 pontos (melhor de 3)
-    do {
-        let user = userchoice();
-        let machine = machinechoice();
-
-        roundGame(user, machine);
+    do { 
+        roundGame(userchoice(), machinechoice()) 
     } while (userPoint < 2 && machinePoint < 2);
 
     endGame();
@@ -37,42 +31,41 @@ function machinechoice() {
 // função de cálculo de cada rodada
 // atualiza a pontuação e mostra mensagem da rodada
 function roundGame(choiceUser, choiceMachine) {
-    let messageLose = "Xii, você perdeu a rodada!";
-    let messageWin = "Uau, você ganhou a rodada!";
-
     if (choiceUser === choiceMachine) {
         alert(`Ambos escolheram ${lista[choiceUser-1]}! \nDeu Empate!`);
     } else {
         switch (choiceUser) {
             case 1:
                 if (choiceMachine == 2) {
-                    alertScreen('machine', choiceUser, choiceMachine, messageLose);
+                    alertScreen('machine', choiceUser, choiceMachine);
                 } else if (choiceMachine == 3) {
-                    alertScreen('user', choiceUser, choiceMachine, messageWin);
+                    alertScreen('user', choiceUser, choiceMachine);
                 }
                 break;
             case 2:
                 if (choiceMachine == 3) {
-                    alertScreen('machine', choiceUser, choiceMachine, messageLose);
+                    alertScreen('machine', choiceUser, choiceMachine);
                 } else if (choiceMachine == 1) {
-                    alertScreen('user', choiceUser, choiceMachine, messageWin);
+                    alertScreen('user', choiceUser, choiceMachine);
                 }
                 break;
             case 3:
                 if (choiceMachine == 1) {
-                    alertScreen('machine', choiceUser, choiceMachine, messageLose);
+                    alertScreen('machine', choiceUser, choiceMachine);
                 } else if (choiceMachine == 2) {
-                    alertScreen('user', choiceUser, choiceMachine, messageWin);
+                    alertScreen('user', choiceUser, choiceMachine);
                 }
                 break;
             default:
-                alert(`Opção escolhida é invalida! \nEscolha corretamente!`)
+                alert(`Opção escolhida é inválida! \nEscolha corretamente!`)
         }
     }
 }
 
 // funcao alerta
-function alertScreen(winner, choiceUser, choiceMachine, message) {
+function alertScreen(winner, choiceUser, choiceMachine) {
+    let message = winner === 'machine' ? 'Xii, você perdeu a rodada!' : 'Uau, você venceu a rodada!';
+
     if (winner === 'machine') {
         machinePoint += 1;
     } else {
@@ -83,9 +76,12 @@ function alertScreen(winner, choiceUser, choiceMachine, message) {
 
 // exibe resultado final com base nas variaveis de pontuacao
 function endGame() {
-    if (userPoint > machinePoint) {
-        alert('Parabéns, você venceu!')
-    } else {
-        alert('Não foi dessa vez, tente de novo!')
-    }
+    userPoint > machinePoint ? alert('Parabéns, você venceu!') : alert('Não foi dessa vez, tente de novo!');
+    resetScore();
+}
+
+// zera a pontuação
+function resetScore() {
+    userPoint = 0;
+    machinePoint = 0;
 }
