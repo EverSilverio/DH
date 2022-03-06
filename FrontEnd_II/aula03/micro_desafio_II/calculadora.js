@@ -16,6 +16,5 @@ console.log(funcaoMultiplicar(0,2));
 // Executar a função que permite a divisão, passando como argumentos quaisquer dois números. Mostrar o resultado no console.
 console.log(funcaoDividir(10,2));
 
-
 // Executar a função que permite dividir, passando agora como um dos dois argumentos, o número zero. Mostrar o resultado no console.
 console.log(funcaoDividir(10,0));
