@@ -8,3 +8,5 @@ Com este modelo, sugerimos que você faça um script para poder selecionar entre
 - Defina quais métodos você deverá utilizar para solicitar um valor a um usuários.
 
 - Não existe uma única maneira de resolver este exercício, então sinta-se encorajado a experimentar opções diferentes, mesmo depois de terminar uma primeira versão implementada. 
+
+[Visualizar Exemplo](https://htmlpreview.github.io/?https://github.com/EverSilverio/DH/blob/master/FrontEnd_II/aula05/mesa_de_trabalho/index.html)
