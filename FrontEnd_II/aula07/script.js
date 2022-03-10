@@ -1,41 +1,24 @@
 // Um usuário é solicitado a inserir 3 links de imagem, que serão armazenados em um array
 const urlImages = [];
 
-const imagens = document.querySelectorAll('img');
-
-imagens.forEach((_, index) => {
+for (let index = 0; index < 3; index++) {
     const url = prompt(`Adicione o url para a imagem ${index + 1}`);
-
     urlImages.push(url);
-});
-
-urlImages.forEach((url, index) => {
-    const imagem = document.querySelector(`#image-${index + 1}`);
-    const anchor = document.querySelector(`#image-${index + 1}`).parentNode;
-    
-    anchor.setAttribute('href',  url);
-    anchor.setAttribute('target',  '_blank');
-
-    imagem.setAttribute('src', url);
-
-
-});
+}
 
 const conteudo = document.querySelector('.conteudo');
 
-/*
+urlImages.forEach((url, index) => {
     const template = `
     <div class="cartao">
-        <a class="anchor" href="${url}">
-            <img class="image" src="${url}">
+        <a class="anchor" href="${url}" target="_blank">
+        <img class="image" src="${url}">
         </a>
-    </div>
+        </div>
     `;
-*/
 
-
-
-
+    conteudo.innerHTML += template;
+});
 
 /*
 https://i.picsum.photos/id/789/200/300.jpg?hmac=nu1PpKsVA8Td2PEYonJWrmrriU-Km5XoKoEZQ-Tq-6E
