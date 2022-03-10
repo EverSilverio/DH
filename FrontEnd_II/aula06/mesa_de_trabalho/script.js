@@ -54,8 +54,7 @@ const loadTemplate = function (imgUrl, title, texto) {
 }
 
 window.onload = function (e) {
-    for (const i in felinos) {
-        let f = felinos[i];
+    for (const f of felinos) {
         let nodeDiv = document.createElement('div');
         nodeDiv.classList.add('item');
         nodeDiv.innerHTML = loadTemplate(f.imgUrl, f.title, f.texto);
