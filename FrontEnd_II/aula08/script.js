@@ -45,7 +45,7 @@ nome.onmouseout = function (event) {
     nome.style.color = "blue";
 }
 
-window.onload = function() {
+window.onload = function () {
     alert('Tela Carregada');
 }
 
@@ -53,5 +53,4 @@ email.onkeypress = function (event) {
     texto_email.innerHTML += event.key;
     cont += 1;
     char_email.innerHTML = cont;
-    
 }
