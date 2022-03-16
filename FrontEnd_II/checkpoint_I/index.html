@@ -8,26 +8,27 @@
     <title>Checkpoint</title>
 </head>
 <body>
-    <main>
-        <div class="form">
-            <h1>Checkpoint I</h1>
-            <form action="submit">
-                <label for="titulo">Titulo</label>
-                <input type="text" name="titulo" id="titulo>
-
-                <label for="descricao">descricao</label>
-                <input type="text" name="descricao" id="descricao">
-
-                <label for="url">Url Image</label>
-                <input type="text" name="url" id="url">
+    <header>
+        <h1>Checkpoint I</h1>
+    </header>
+    
+    <main class="container">
+        <div class="container--form">
+            <h2>Adicionar Imagens</h2>
+            <form id="form" action="submit">
+                <input type="text" name="titulo" id="titulo" placeholder="Título">
+                <input type="text" name="Descricao" id="descricao" placeholder="Descrição">
+                <input type="text" name="url" id="url" placeholder="Url Imagem">
 
                 <button type="submit">Adicionar Imagem</button>
             </form>
         </div>
 
-        <div class="images">
-            <img src="" alt="" srcset="">
+        <div class="container--images">
+            <h2>Imagens</h2>
         </div>
     </main>
+
+    <script src="./script.js"></script>
 </body>
 </html>

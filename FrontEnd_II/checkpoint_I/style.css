@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #00152B;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F24C03;
+    color: white;
+    height: 80px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    margin: 10px 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.container--form {
+    padding: 0 30px;
+    width: 400px;
+    min-height: 100vh;
+    margin-right: 10px;
+    background-color: #003061;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, button {
+    margin: 5px 0;
+    height: 50px;
+    font-size: 1em;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: 0;
+}
+
+button {
+    background-color: #F24C03;
+    color: antiquewhite;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+button:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: white;
+}
+
+.cards {
+    position: relative;
+    padding: 40px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.cards img {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.cards h3, .cards p {
+    padding-bottom: 10px;
+}
+
+.cards p {
+    padding-top: 10px;
+}
+
+.cards .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: red;
+    font-size: .7em;
+    cursor: pointer;
+}
