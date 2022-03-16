@@ -8,3 +8,5 @@
 3. O formulário deve fazer o envio dos dados a um array.
 4. Através do JS , criem um card que apresentará novamente ao usuário os dados enviados no formulário. Deve-se utilizar nós e template string para este passo.
 5. Os cards com os dados devem estar alinhados em coluna.
+
+![image](https://user-images.githubusercontent.com/5773748/158500339-34407ac6-ea09-4121-a285-b46aa759b147.png)
