@@ -38,10 +38,17 @@ h2, h3 {
 }
 
 .container--form {
-    width: 400px;
+    min-width: 450px;
     min-height: calc(100vh - 80px);
     margin-right: 10px;
     background-color: #003061;
+}
+
+.container--images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;    
 }
 
 #form {
@@ -55,9 +62,9 @@ h2, h3 {
     color: aqua;
 }
 
-input, button {
-    margin: 5px 0;
+button {
     height: 50px;
+    margin: 5px 0;
     font-size: 1em;
     padding: 0 10px;
     border-radius: 10px;
@@ -69,10 +76,6 @@ button {
     color: antiquewhite;
     font-weight: bold;
     cursor: pointer;
-}
-
-input:hover {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 button:hover {
@@ -131,16 +134,16 @@ button:hover {
     }
 
     .container--images {
-        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .cards {
+        width: 75%;
         max-width: 400px;
     } 
 
-    .card img {
+    .cards img {
         width: 100%;
     }
 }

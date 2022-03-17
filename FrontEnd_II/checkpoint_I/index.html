@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/float-label.css">
     <title>Checkpoint</title>
 </head>
 
@@ -18,18 +19,27 @@
         <div class="container--form">
             <h2>Adicionar Imagens</h2>
             <form id="form" action="submit">
-                <input type="text" name="titulo" id="titulo" placeholder="Título" required>
-                <input type="text" name="Descricao" id="descricao" placeholder="Descrição" required>
-                <input type="text" name="url" id="url" placeholder="Url Imagem" required>
+                <div class="label-float">
+                    <input type="text" name="titulo" id="titulo" placeholder=" " required>
+                    <label for="titulo">Título</label>
+                </div>
+                <div class="label-float">
+                    <input type="text" name="descrição" id="descricao" placeholder=" " required>
+                    <label for="descricao">Descrição</label>
+                    
+                </div>
+                <div class="label-float">
+                    <input type="text" name="url" id="url" placeholder=" " required>
+                    <label for="url">Url Imagem</label>
+                </div>
+
                 <div>
                     <span class="small">Exemplo:</span>
                     <span id="url-sample" class="small">https://picsum.photos/id/1025/400/300</span>
                 </div>
-                <button type="submit">Adicionar Imagem</button>
+                <button type="submit" title="Adicionar card com imagem">Adicionar Card</button>
             </form>
         </div>
-
-        <!-- <h2>Imagens</h2> -->
         <div class="container--images">
         </div>
     </main>
