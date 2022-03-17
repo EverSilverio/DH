@@ -42,17 +42,17 @@ form.onsubmit = function (e) {
     let close = card.querySelector('.close');
     
     // adiciona evento de click ao close, passando o no para ser removido
-    close.addEventListener('click', function (params) {
+    close.addEventListener('click', function () {
         containerImages.removeChild(card);
     })
 
-    // previne o comportamento default do submit
+    // previne o comportamento default do evento (submit)
     e.preventDefault();
 }
 
 
 
-
+//exemplo de imagens
 //https://picsum.photos/id/1024/400/300
 //https://picsum.photos/id/237/400/300
 //https://picsum.photos/id/1025/400/300

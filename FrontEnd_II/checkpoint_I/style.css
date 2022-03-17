@@ -30,7 +30,7 @@ h2 {
 
 .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .container--form {
@@ -44,6 +44,11 @@ h2 {
 #form {
     display: flex;
     flex-direction: column;
+}
+
+.small {
+    font-size: small;
+    color: aqua;
 }
 
 input, button {
