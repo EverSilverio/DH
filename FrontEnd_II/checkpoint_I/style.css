@@ -39,7 +39,7 @@ h2, h3 {
 
 .container--form {
     width: 400px;
-    min-height: 100vh;
+    min-height: calc(100vh - 80px);
     margin-right: 10px;
     background-color: #003061;
 }
@@ -78,6 +78,10 @@ input:hover {
 button:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     color: white;
+}
+
+#url-sample {
+    cursor: pointer;
 }
 
 .cards {
