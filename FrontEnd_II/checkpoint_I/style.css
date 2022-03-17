@@ -28,13 +28,16 @@ h2 {
     margin: 10px 0;
 }
 
+h2, h3 {
+    text-align: center;
+}
+
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .container--form {
-    padding: 0 30px;
     width: 400px;
     min-height: 100vh;
     margin-right: 10px;
@@ -44,6 +47,7 @@ h2 {
 #form {
     display: flex;
     flex-direction: column;
+    padding: 0 30px;
 }
 
 .small {
@@ -106,3 +110,30 @@ button:hover {
     font-size: .7em;
     cursor: pointer;
 }
+
+/* small devices and mobile | <= 768 */
+@media only screen and (max-width: 768px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container--form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .container--images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        max-width: 400px;
+    } 
+}
+

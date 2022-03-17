@@ -50,6 +50,15 @@ form.onsubmit = function (e) {
     e.preventDefault();
 }
 
+// obtem elemento exemplo de url
+const urlSample = document.getElementById('url-sample');
+
+// adiciona evento onclick
+urlSample.onclick = function (e) {
+    inputUrl.value = urlSample.innerText;
+};
+
+
 
 
 //exemplo de imagens
