@@ -1,3 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-form {
+    width: 450px;
+    border-style: groove;
+    border-radius: 20px;
+    background-color: rgba(245, 245, 245, 0.884);
+}
+
 #formulario {
     display:flex;
     flex-direction:column;
@@ -5,30 +31,84 @@
     margin: 10px;
 }
 
-div {
-    margin:10px;
+#formulario div {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
 }
 
-input, button {
-    border-radius: 100px;
+.destaque {
+    font-family: 'Palette Mosaic', cursive;  
 }
 
-#enviar{
+
+label {
+    width: 120px;
+    font-family: 'Bree Serif', serif;
+}
+
+input {
+    border-radius: 20px;
+    color: black;
+}
+
+#cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 10px;
+    padding: 10px;
+    color: white;
+}
+
+.btn {
+    cursor:pointer;
+}
+
+#submit{
+    font-family: 'Bree Serif', serif;
     margin: 10px;
     border-style:solid;
-    background-color: greenyellow;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(23, 214, 65);
     color: black;
 }
 
 #reset{
+    font-family: 'Bree Serif', serif;
     margin: 10px;
     border-style:solid;
+    border-radius: 20px;
+    padding: 10px;
     background-color: whitesmoke;
     color: black;
 }
 
-.texto{
-    display:flex;
-    flex-direction:column;
-    align-items: center;
+.destaque:hover { 
+    color:rgba(243, 3, 3, 0.993);
+    transform: scale(1.05);
+}
+
+input:focus {
+    color:white;
+    background-color: rgba(0, 0, 0, 0.815);
+}
+
+#submit:hover {
+    color:white;
+    border-color: white;
+    box-shadow: 0 0 10px 3px rgba(31, 29, 29, 0.4);
+    transform: scale(1.1);
+}
+
+#reset:hover {
+    color:white;
+    background-color: black;
+    border-color: black;
+    box-shadow: 0 0 10px 3px rgba(31, 29, 29, 0.4);
+    transform: scale(1.1);
 }

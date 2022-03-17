@@ -59,8 +59,6 @@ urlSample.onclick = function (e) {
 };
 
 
-
-
 //exemplo de imagens
 //https://picsum.photos/id/1024/400/300
 //https://picsum.photos/id/237/400/300

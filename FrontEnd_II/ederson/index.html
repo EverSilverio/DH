@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Mesa de Trabalho 08</title>
+    <title>Checkpoint I</title>
 </head>
 
 <body>
+    <main>
+
+        <div class="container-form">
+            <form action="submit" id="formulario">
+                <h1 class="destaque"> JOGOS EM DESTAQUE </h1>
+
+                <div>
+                    <label for="titulo"><strong>Título:</strong></label>
+                    <input type="text" name="titulo" id="titulo">
+                </div>
+
+                <div>
+                    <label for="descricao"><strong>Descrição: </strong></label>
+                    <input type="text" name="descricao" id="descricao">
+                </div>
+
+                <div>
+                    <label for="url"><strong>URL da Imagem: </strong></label>
+                    <input type="text" name="url" id="url">
+                </div>
+
+                <div class="btn">
+                    <button type="submit" id="submit">Add Jogo</button>
+                    <button type="reset" id="reset">Limpar dados</button>
+                </div>
+            </form>
+        </div>
+        <div id="cards"> </div>
+    </main>
     <script src="script.js"></script>
 </body>
 
