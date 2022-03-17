@@ -53,7 +53,7 @@ form.onsubmit = function (e) {
 // obtem elemento exemplo de url
 const urlSample = document.getElementById('url-sample');
 
-// adiciona evento onclick
+// adiciona evento onclick para adicionar texto de exemplo no Input URL
 urlSample.onclick = function (e) {
     inputUrl.value = urlSample.innerText;
 };
