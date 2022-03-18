@@ -107,6 +107,7 @@ button:hover {
 
 .cards p {
     padding-top: 10px;
+    width: 400px;
 }
 
 .cards .close {
@@ -147,6 +148,10 @@ button:hover {
         width: 75%;
         max-width: 400px;
     } 
+
+    .cards p {
+        max-width: 300px;
+    }
 
     .cards img {
         width: 100%;
