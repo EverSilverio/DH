@@ -19,3 +19,16 @@ Instruções e requisitos do entregável
 5. Sobre os Cards:
 a. Os cards devem ter uma imagem e constar todas as informações previamente preenchidas no formulário. 
 b. O comportamento se dará de forma que as informações preenchidas sejam exibidas na seção de cards.
+
+---
+#Solução
+
+## DESKTOP
+![image](https://user-images.githubusercontent.com/5773748/159004029-cd4f13d8-2420-40c7-8e47-acb7dda57777.png)
+
+![image](https://user-images.githubusercontent.com/5773748/159002875-558c0db0-87b1-4626-8a1c-b93774eb6e52.png)
+
+## MOBILE
+![image-removebg-preview](https://user-images.githubusercontent.com/5773748/159004451-8cf3b26a-2352-4c57-b723-e3abbf628543.png)
+
+![image](https://user-images.githubusercontent.com/5773748/159003853-5a614b40-ea64-4bb8-b31e-d9a691d15d37.png)
