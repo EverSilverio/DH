@@ -1,6 +1,9 @@
 // obtem elemento formulario
 const form = document.getElementById('form');
 
+// obtem elemento container do formulario
+const containerForm = document.querySelector('.container--form');
+
 // obtem container dos cards
 const containerImages = document.querySelector('.container--images');
 
@@ -25,25 +28,33 @@ form.onsubmit = function (e) {
         inputDescricao.value,
         inputUrl.value
     );
-    
+
     // cria nó div para receber o card
     let card = document.createElement('div');
-    
+
     // adiciona classe cards para o nó criado
     card.className = 'cards';
 
     // adiciona template image ao nó card
     card.innerHTML = image;
-    
+
     // faz append do card ao container de imagens
     containerImages.appendChild(card);
 
+    // adiciona classe 'haveimage' ao container--form
+    containerForm.classList.add('haveimage');
+
     // obtem elemento close
     let close = card.querySelector('.close');
-    
+
     // adiciona evento de click ao close, passando o no para ser removido
     close.addEventListener('click', function () {
+        // remove o card filho do container de imagens
         containerImages.removeChild(card);
+
+        // remove classe que indica que container possui imagens
+        if (containerImages.innerHTML.trim() === '')
+            containerForm.classList.remove('haveimage');
     })
 
     // previne o comportamento default do evento (submit)

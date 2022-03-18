@@ -139,6 +139,10 @@ button:hover {
         align-items: center;
     }
 
+    .container--form.haveimage {
+        min-height: 350px;
+    }
+
     .cards {
         width: 75%;
         max-width: 400px;
