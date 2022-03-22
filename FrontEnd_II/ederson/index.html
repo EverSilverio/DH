@@ -14,7 +14,7 @@
 
         <div class="container-form">
             <form action="submit" id="formulario">
-                <h1 class="destaque"> JOGOS EM DESTAQUE </h1>
+                <h1 class="titulo-form"> JOGOS EM DESTAQUE </h1>
 
                 <div>
                     <label for="titulo"><strong>Título:</strong></label>
@@ -22,18 +22,24 @@
                 </div>
 
                 <div>
+                    <label for="ano"><strong>Ano de lançamento:</strong></label>
+                    <input type="text" name="ano" id="ano">
+                </div>
+
+                <div>
                     <label for="descricao"><strong>Descrição: </strong></label>
                     <input type="text" name="descricao" id="descricao">
                 </div>
 
-                <div>
+                <div class="img">
                     <label for="url"><strong>URL da Imagem: </strong></label>
-                    <input type="text" name="url" id="url">
+                    <input type="text" name="url" id="url" placeholder="https://picsum.photos/500" >
                 </div>
 
                 <div class="btn">
                     <button type="submit" id="submit">Add Jogo</button>
-                    <button type="reset" id="reset">Limpar dados</button>
+                    <button type="reset" id="reset">Limpar Dados</button>
+                    <button type="button" id="remove">Remover Cards</button>
                 </div>
             </form>
         </div>

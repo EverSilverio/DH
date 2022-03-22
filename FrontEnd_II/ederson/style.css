@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 
 
@@ -19,9 +19,10 @@ main {
 
 .container-form {
     width: 450px;
+    margin-top: 20px;
     border-style: groove;
     border-radius: 20px;
-    background-color: rgba(245, 245, 245, 0.884);
+    background-color: rgba(245, 245, 245, 0.952);
 }
 
 #formulario {
@@ -37,31 +38,35 @@ main {
     margin: 10px 0;
 }
 
-.destaque {
-    font-family: 'Palette Mosaic', cursive;  
+.titulo-form {
+    font-family: 'Orbitron', sans-serif;
 }
 
 
 label {
-    width: 120px;
+    width: 200px;
     font-family: 'Bree Serif', serif;
 }
 
 input {
     border-radius: 20px;
+    padding-left: 10px;
     color: black;
 }
 
 #cards {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow:row wrap;
+    justify-content: center;
 }
 
 .card {
+    max-width: 550px;
     margin: 10px;
     padding: 10px;
     color: white;
+    background-color:rgba(44, 44, 44, 0.849);
+    border-radius: 20px;
 }
 
 .btn {
@@ -88,7 +93,17 @@ input {
     color: black;
 }
 
-.destaque:hover { 
+#remove{
+    font-family: 'Bree Serif', serif;
+    margin: 10px;
+    border-style:solid;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgba(156, 28, 28, 0.911);
+    color: black;
+}
+
+.titulo-form:hover { 
     color:rgba(243, 3, 3, 0.993);
     transform: scale(1.05);
 }
@@ -108,7 +123,41 @@ input:focus {
 #reset:hover {
     color:white;
     background-color: black;
-    border-color: black;
+    border-color: white;
     box-shadow: 0 0 10px 3px rgba(31, 29, 29, 0.4);
     transform: scale(1.1);
+}
+
+#remove:hover {
+    color:white;
+    background-color: rgb(136, 12, 12);
+    border-color: white;
+    box-shadow: 0 0 10px 3px rgba(31, 29, 29, 0.4);
+    transform: scale(1.1);
+}
+
+.card:hover {
+    border-style: groove;
+    border-color: blueviolet;
+    box-shadow: 0 0 10px 3px honeydew;
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width: 480px) {
+    .container-form {
+        width: 300px;
+    }   
+
+    #formulario label {
+        width: 150px;
+    }
+ 
+    #formulario input {
+        width: 100px;
+    }
+    
+    .btn {
+        width: 100px;
+    }
+
 }
