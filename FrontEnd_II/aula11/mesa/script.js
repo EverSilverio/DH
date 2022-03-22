@@ -33,6 +33,6 @@ btn.addEventListener("click", function(e){
     concat.innerHTML = nomeCompleto;
 
     // replace
-    var result=nomeCompleto.replace(/a/g,"@").replace(/e/g,"3");
+    var result = nomeCompleto.replace(/a/g,"@").replace(/e/g,"3");
     replace.innerHTML = result;
 })
