@@ -12,6 +12,7 @@ body {
 }
 
 form {
+   position: relative;
    background-color: white;
    width: 70vw;
    height: fit-content;
@@ -78,8 +79,14 @@ button:disabled {
 }
 
 #msg {
+   position: absolute;
    display: none;
-   padding-top: 5px;
    font-size: .8em;
-   color: red;
+   background-color: #EBCBCB;
+   color: #A94456;
+   border-radius: 5px;
+   top: 1px;
+   left: 0;
+   right: 0;
+   padding-left: 15px;
 }
