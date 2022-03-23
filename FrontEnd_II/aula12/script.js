@@ -53,16 +53,19 @@ hobbies.forEach(el => {
 // evento onchange nacionalidade
 nacionalidades.forEach(el => {
    el.addEventListener('change', function(ev) {
-      if (el.value == 'nacionalidadeBrasileira') {
-         funcToggleBtn(false);
-         // exibe elemento com mensagem
-         msg.style.display = 'block';
-         return;
+      console.log(el.checked);
+      if (el.checked === true) {
+         if (el.value == 'nacionalidadeBrasileira') {
+            funcToggleBtn(false);
+            // exibe elemento com mensagem
+            msg.style.display = 'block';
+            return;
+         }
+         // oculta elemento com mensagem
+         msg.style.display = 'none';
+         funcToggleBtn(true);
+         validacao();
       }
-      // oculta elemento com mensagem
-      msg.style.display = 'none';
-      funcToggleBtn(true);
-      validacao();
    })
 });
 
@@ -98,13 +101,12 @@ const validacao = function() {
       }
 
       // valida hobbies
-      hobbies.forEach(el => {
-         if (contaCheckes() > 4) {
-            funcToggleBtn(false);
-            return;
-         }
+      if (contaCheckes() > 4) {
+         funcToggleBtn(false);
+         return;
+      } else {
          funcToggleBtn(true);
-      });
+      }
 
       // valida nacionalidades
       nacionalidades.forEach(el => {
