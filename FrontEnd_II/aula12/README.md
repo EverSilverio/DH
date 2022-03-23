@@ -19,3 +19,9 @@ Hoje devemos validar este formulário, ele deve desabilitar o botão de cadastro
 * Se Brasil for selecionado, o formulário mostra uma exceção:
 > "Desculpe, ainda não estamos recrutando magos no Brasil, mas chegaremos em breve"
 
+---
+## EQUIPE
+@alcilene @ederson @marcos pires @juliana
+
+## SOLUÇÃO
+[Acesse o Formulário](https://htmlpreview.github.io/?https://github.com/EverSilverio/DH/blob/master/FrontEnd_II/aula12/index.html)
