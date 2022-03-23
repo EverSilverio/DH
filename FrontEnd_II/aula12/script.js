@@ -20,7 +20,7 @@ const msg_03 = 'Informar no máximo 04 (quatro) hobbies';
 
 
 // funcao para desabilitar o botao
-const funcToggleBtn = function (desab) {
+const funcToggleBtn = function(desab) {
    if (desab) {
       btnSubmit.removeAttribute('disabled');
    } else {
@@ -29,7 +29,7 @@ const funcToggleBtn = function (desab) {
 }
 
 // conta hobbies checados
-const contaCheckes = function () {
+const contaCheckes = function() {
    let cont = 0;
    for (h of hobbies) {
       if (h.checked)
@@ -39,7 +39,8 @@ const contaCheckes = function () {
 }
 
 // função de revalidacao geral do formulario 
-const validacao = function () {
+const validacao = function() {
+   console.log('validando...');
    //valida se possui nome e sobrenome
    let arrNomecompleto = nome.value.split(' ');
 
@@ -47,12 +48,12 @@ const validacao = function () {
    if (arrNomecompleto.length > 1) {
       nome.classList.remove('error');
       msg.style.display = 'none';
-      msg.innerHTML = '';      
+      msg.innerHTML = '';
       funcToggleBtn(true);
    } else {
       nome.classList.add('error');
       msg.style.display = 'block';
-      msg.innerHTML = msg_02;      
+      msg.innerHTML = msg_02;
       funcToggleBtn(false);
       return;
    }
@@ -61,12 +62,12 @@ const validacao = function () {
    if (arrNomecompleto[0].length > 1 && arrNomecompleto[1].length > 1) {
       nome.classList.remove('error');
       msg.style.display = 'none';
-      msg.innerHTML = '';        
+      msg.innerHTML = '';
       funcToggleBtn(true);
    } else {
       nome.classList.add('error');
       msg.style.display = 'block';
-      msg.innerHTML = msg_02;        
+      msg.innerHTML = msg_02;
       funcToggleBtn(false);
       return;
    }
@@ -75,12 +76,12 @@ const validacao = function () {
    if (nome.value.length <= 150 && nome.value !== '') {
       nome.classList.remove('error');
       msg.style.display = 'none';
-      msg.innerHTML = '';         
+      msg.innerHTML = '';
       funcToggleBtn(true);
    } else {
       nome.classList.add('error');
       msg.style.display = 'block';
-      msg.innerHTML = msg_02;        
+      msg.innerHTML = msg_02;
       funcToggleBtn(false)
       return;
    }
@@ -90,32 +91,30 @@ const validacao = function () {
    if (regexNum.test(nome.value)) {
       nome.classList.add('error');
       msg.style.display = 'block';
-      msg.innerHTML = msg_02;          
+      msg.innerHTML = msg_02;
       funcToggleBtn(false)
       return;
    } else {
       nome.classList.remove('error');
       msg.style.display = 'none';
-      msg.innerHTML = '';        
+      msg.innerHTML = '';
       funcToggleBtn(true);
    }
 
    // valida hobbies
    if (contaCheckes() > 4) {
       msg.style.display = 'block';
-      msg.innerHTML = msg_03; 
+      msg.innerHTML = msg_03;
       funcToggleBtn(false);
       return;
    } else {
       msg.style.display = 'none';
-      msg.innerHTML = '';            
+      msg.innerHTML = '';
       funcToggleBtn(true);
    }
 
    // valida nacionalidades
    nacionalidades.forEach(el => {
-      console.log(el.value);
-
       if (el.checked === true) {
          if (el.value == 'nacionalidadeBrasileira') {
             // exibe elemento com mensagem
@@ -132,6 +131,7 @@ const validacao = function () {
    });
 }
 
+/* adiciona validacao aos elementos que precisam ser validados ao alterar */
 
 // adiciona evento ao sair do campo nome - validacao
 nome.addEventListener('change', validacao);
@@ -145,3 +145,9 @@ hobbies.forEach(el => {
 nacionalidades.forEach(el => {
    el.addEventListener('change', validacao)
 });
+
+// ao carregar a aplicação focar no input nome
+window.onload = function() {
+   //iniciando o foco no nome
+   nome.focus();
+}
