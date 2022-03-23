@@ -46,42 +46,36 @@ const validacao = function() {
 
    // validaca se possui nome e sobrenome
    if (arrNomecompleto.length > 1) {
-      nome.classList.remove('error');
-      msg.style.display = 'none';
-      msg.innerHTML = '';
+      handleError(nome, false);
+      mensagem('none', '')
       funcToggleBtn(true);
    } else {
-      nome.classList.add('error');
-      msg.style.display = 'block';
-      msg.innerHTML = msg_02;
+      handleError(nome, true);
+      mensagem('block', msg_02)
       funcToggleBtn(false);
       return;
    }
 
    // validaca se nome ou sobrenome menor que 2 
    if (arrNomecompleto[0].length > 1 && arrNomecompleto[1].length > 1) {
-      nome.classList.remove('error');
-      msg.style.display = 'none';
-      msg.innerHTML = '';
+      handleError(nome, false);
+      mensagem('none', '')
       funcToggleBtn(true);
    } else {
-      nome.classList.add('error');
-      msg.style.display = 'block';
-      msg.innerHTML = msg_02;
+      handleError(nome, true);
+      mensagem('block', msg_02)
       funcToggleBtn(false);
       return;
    }
 
    // valida se nome excedeu 150 chars
    if (nome.value.length <= 150 && nome.value !== '') {
-      nome.classList.remove('error');
-      msg.style.display = 'none';
-      msg.innerHTML = '';
+      handleError(nome, false);
+      mensagem('none', '')
       funcToggleBtn(true);
    } else {
-      nome.classList.add('error');
-      msg.style.display = 'block';
-      msg.innerHTML = msg_02;
+      handleError(nome, true);
+      mensagem('block', msg_02)
       funcToggleBtn(false)
       return;
    }
@@ -89,27 +83,23 @@ const validacao = function() {
    // valida se nome possui nro
    const regexNum = /[0-9]/;
    if (regexNum.test(nome.value)) {
-      nome.classList.add('error');
-      msg.style.display = 'block';
-      msg.innerHTML = msg_02;
+      handleError(nome, true);
+      mensagem('block', msg_02)
       funcToggleBtn(false)
       return;
    } else {
-      nome.classList.remove('error');
-      msg.style.display = 'none';
-      msg.innerHTML = '';
+      handleError(nome, false);
+      mensagem('none', '')
       funcToggleBtn(true);
    }
 
    // valida hobbies
    if (contaCheckes() > 4) {
-      msg.style.display = 'block';
-      msg.innerHTML = msg_03;
+      mensagem('block', msg_03)
       funcToggleBtn(false);
       return;
    } else {
-      msg.style.display = 'none';
-      msg.innerHTML = '';
+      mensagem('none', '')
       funcToggleBtn(true);
    }
 
@@ -118,14 +108,12 @@ const validacao = function() {
       if (el.checked === true) {
          if (el.value == 'nacionalidadeBrasileira') {
             // exibe elemento com mensagem
-            msg.style.display = 'block';
-            msg.innerHTML = msg_01;
+            mensagem('block', msg_01)
             funcToggleBtn(false);
             return;
          }
          // oculta elemento com mensagem
-         msg.style.display = 'none';
-         msg.innerHTML = '';
+         mensagem('none', '')
          funcToggleBtn(true);
       }
    });
@@ -145,6 +133,21 @@ hobbies.forEach(el => {
 nacionalidades.forEach(el => {
    el.addEventListener('change', validacao)
 });
+
+// funcao de controle da mensagem
+const mensagem = function(display, text) {
+   msg.style.display = display;
+   msg.innerHTML = text;
+}
+
+// função controle de erro
+const handleError = function(el, error) {
+   if (error) {
+      el.classList.add('error');
+   } else {
+      el.classList.remove('error');
+   }
+}
 
 // ao carregar a aplicação focar no input nome
 window.onload = function() {
