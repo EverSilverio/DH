@@ -18,7 +18,6 @@ const msg_01 = 'Desculpe, ainda não estamos recrutando bruxos no Brasil!<br> Ma
 const msg_02 = 'Nome informado inválido';
 const msg_03 = 'Informar no máximo 04 (quatro) hobbies';
 
-
 // funcao para desabilitar o botao
 const funcToggleBtn = function(desab) {
    if (desab) {
@@ -133,6 +132,8 @@ hobbies.forEach(el => {
 nacionalidades.forEach(el => {
    el.addEventListener('change', validacao)
 });
+
+/* funções de controle */
 
 // funcao de controle da mensagem
 const mensagem = function(display, text) {
