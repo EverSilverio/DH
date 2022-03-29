@@ -9,3 +9,10 @@ REQUISITOS
 - Salve constantemente as informações no localStorage, caso a página seja recarregada os comentários devem ser mantidos.
 
 ```
+## SOLUÇÃO
+
+GP 03: Filipe Farias, Marcos Pires, Everton Silverio, Bruno Furukawa, Dumith Habib
+
+[Exemplo Funcional](https://eversilverio.github.io/DH/FrontEnd_II/aula14/)
+
+![image](https://user-images.githubusercontent.com/5773748/160025830-867bffd8-34b1-4977-8083-0c3ce8c877e7.png)

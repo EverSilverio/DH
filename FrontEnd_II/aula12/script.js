@@ -39,7 +39,6 @@ const contaCheckes = function() {
 
 // função de revalidacao geral do formulario 
 const validacao = function() {
-   console.log('validando...');
    //valida se possui nome e sobrenome
    let arrNomecompleto = nome.value.split(' ');
 

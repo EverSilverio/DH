@@ -16,13 +16,18 @@ body {
   height: 100vh;
 }
 
+main {
+  width: 100%;
+}
+
 aside {
   display: flex;
-  align-items: center;
   justify-content: center;
 
   width: 400px;
   height: 100%;
+
+  padding-top: 20px;
 
   background-color: lightblue;
 }
@@ -30,4 +35,32 @@ aside {
 form {
   display: flex;
   flex-direction: column;
+}
+
+#btn-save {
+  height: 35px;
+  margin-top: 10px;
+  background-color: #0267FF;
+  color: white;
+}
+
+p {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: aqua;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 40px;
+}
+
+p::before{
+  content: '';
+  background: url(edit_24.png);
+  position:absolute;
+  width: 24px;
+  height: 24px;
+  top:5px;
+  left:10px;
 }
