@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+:root {
+    --primary: #7898FF;
+    --secondary: #8E64C5;
+    --app-grey: #F2F2F2;
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+background: linear-gradient(110deg, var(--primary), var(--secondary));
+height: 100vh;
+}
+
+h1{
+  text-align: center;
+  margin: 20px 0;
+}
+
+.tarjeta{
+  text-align: center;
+  position: relative;
+  background-color: white;
+  border-radius: 20px;
+  margin: 0 auto;
+  height: 160px;
+  width: 50%;
+  max-width: 400px;
+  padding: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ident {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.nome, .email {
+  font-size: .7em;
+  padding-left: 10px;
+}
+
+.nome {
+  font-size: .8em;
+  margin-bottom: 10px;
+}
+
+.email {
+  font-size: .6em;
+}
+
+.imgcard {
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 120px;
+  height: 120px;
+}

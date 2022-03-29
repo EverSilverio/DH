@@ -5,6 +5,9 @@
 // Everton Silverio
 // Eduardo Russo
 
+// Utilizar no exercício:
+// validação | normalização | location | localStorage
+
 function criarUsuario(ev) {
 
    const nome = document.querySelector("#nome");
