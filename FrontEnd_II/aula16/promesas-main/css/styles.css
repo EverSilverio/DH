@@ -23,22 +23,26 @@ h1{
   margin: 20px 0;
 }
 
-.tarjeta{
-  text-align: center;
-  position: relative;
-  background-color: white;
-  border-radius: 20px;
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 80vw;
   margin: 0 auto;
-  height: 160px;
-  width: 50%;
-  max-width: 400px;
-  padding: 10px;
+  padding-block: 20px;
+}
+
+.tarjeta{
+  background-color: white;
+  border-radius: 7px;
+  margin: 0 auto;
 }
 
 .card {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px;
 }
 
 .ident {
@@ -46,13 +50,10 @@ h1{
   flex-direction: column;
   align-items: flex-start;
 }
-.nome, .email {
-  font-size: .7em;
-  padding-left: 10px;
-}
 
 .nome {
-  font-size: .8em;
+  font-size: 1em;
+  font-weight: bold;
   margin-bottom: 10px;
 }
 
@@ -61,8 +62,7 @@ h1{
 }
 
 .imgcard {
-  margin-top: 10px;
   border-radius: 10px;
-  width: 120px;
-  height: 120px;
+  width: 100%;
+  padding: 7px;
 }

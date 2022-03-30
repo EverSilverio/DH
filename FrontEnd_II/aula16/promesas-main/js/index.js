@@ -1,4 +1,4 @@
-const tarjeta = document.querySelector('.tarjeta');
+const main = document.querySelector('main');
 
 const baseDeDados = {
     "resultado": [{
@@ -23,6 +23,58 @@ const baseDeDados = {
             }
         },
         "email": "david.fernando@exemplo.com",
+        "login": {
+            "uuid": "155e77ee-ba6d-486f-95ce-0e0c0fb4b919",
+            "usuario": "silverswan131",
+            "senha": "firewall",
+            "salt": "TQA1Gz7x",
+            "md5": "dc523cb313b63dfe5be2140b0c05b3bc",
+            "sha1": "7a4aa07d1bedcc6bcf4b7f8856643492c191540d",
+            "sha256": "74364e96174afa7d17ee52dd2c9c7a4651fe1254f471a78bda0190135dcd3480"
+        },
+        "dob": {
+            "data": "1993-07-20T09:44:18.674Z",
+            "idade": 26
+        },
+        "registro": {
+            "data": "2002-05-21T10:59:49.966Z",
+            "idade": 17
+        },
+        "fone": "011-4039-8745",
+        "celular": "011-99874-5621",
+        "id": {
+            "nome": "PPS",
+            "valor": "0390511T"
+        },
+        "imagem": {
+            "grande": "https://randomuser.me/api/portraits/men/75.jpg",
+            "media": "https://randomuser.me/api/portraits/med/men/75.jpg",
+            "miniatura": "https://randomuser.me/api/portraits/thumb/men/75.jpg"
+        },
+        "nat": "IE"
+    },
+    {
+        "genero": "masculino",
+        "nome": {
+            "titulo": "sr",
+            "primeiro": "Joaquim",
+            "utlimo": "Ferreira"
+        },
+        "localizacao": {
+            "rua": " Augusta , 238",
+            "cidade": "São Paulo",
+            "Estado": "São Paulo",
+            "postcode": "01305000",
+            "coordenadas": {
+                "latitude": "-23.5569581",
+                "longitude": "-46.6589677"
+            },
+            "timezone": {
+                "offset": "-3:00",
+                "descricao": "Brasil"
+            }
+        },
+        "email": "joaquim@exemplo.com",
         "login": {
             "uuid": "155e77ee-ba6d-486f-95ce-0e0c0fb4b919",
             "usuario": "silverswan131",
@@ -94,37 +146,45 @@ function renderizarDadosUsuario(dados) {
     //  Isso deve ser baseado nas informações que chegam até nós e  são inseridas no HTML.
     //  Dica: você pode manipular o CSS e estruturar o card ao seu gosto.
 
-    // obtem resultado do usuario e armazena em usuario
-    const usuario = dados.resultado[0];
+    // loop na lista de usuarios
+    dados.resultado.forEach(element => {
+        
+        // obtem resultado do usuario e armazena em usuario
+        const usuario = element;
     
-    // obtem nome completo
-    const nomeCompleto = 
-        // usuario.nome.titulo + ' ' + 
-        usuario.nome.primeiro + ' ' + 
-        usuario.nome.utlimo;
+        // obtem nome completo
+        const nomeCompleto = 
+            // usuario.nome.titulo + ' ' + 
+            usuario.nome.primeiro + ' ' + 
+            usuario.nome.utlimo;
+    
+        // obtem email
+        const email = usuario.email;
+        // obtem foto
+        const foto = usuario.imagem.grande;
+    
+        // cria template card
+        const card = templateCard(nomeCompleto, email, foto);
+    
+        console.log(card);
+        // incluir card no HTML
+        main.innerHTML += card;
 
-    // obtem email
-    const email = usuario.email;
-    // obtem foto
-    const foto = usuario.imagem.grande;
-
-    // cria template card
-    const card = templateCard(nomeCompleto, email, foto);
-
-    // incluir card no HTML
-    tarjeta.innerHTML = card;
+    });
 }
 
 // template do card
 const templateCard = function (nome, email, img) {
     return `
-    <div class="card">
+    <div class="tarjeta">
         <img class="imgcard" src="${img}" >
-        <div class="ident">
-            <h3 class="nome">${nome}</h3>
-            <h3 class="email">${email}</h3>
+        <div class="card">
+            <div class="ident">
+                <p class="nome">${nome}</p>
+                <p class="email">${email}</p>
+            </div>
         </div>
-    </div>
+    </div>    
     `;
     
 }
