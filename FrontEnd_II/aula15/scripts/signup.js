@@ -65,3 +65,15 @@ function criarUsuario(ev) {
    // Redireciona pagina
    location.href = 'index.html';
 }
+/*
+let userList = JSON.parse(localStorage.getItem('userList') || '[]');
+    userList.push (
+      {
+        theName: theName.value,
+        nickname: nickname.value,
+        email: email.value.toLowerCase(),
+        password: password.value
+      }
+      )
+    localStorage.setItem('userList', JSON.stringify(userList))
+*/
