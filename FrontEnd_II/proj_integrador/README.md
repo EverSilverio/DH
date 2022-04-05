@@ -10,5 +10,6 @@
 [Exemplo](https://eversilverio.github.io/DH/FrontEnd_II/proj_integrador/index.html)
 
 ### Login teste:
-> jonjon@gemail.com
-> js123456
+> e-mail: jonjon@gemail.com
+> 
+> senha: js123456
