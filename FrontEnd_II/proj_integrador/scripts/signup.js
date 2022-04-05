@@ -88,10 +88,6 @@ function criarUsuario(ev) {
       .catch(error => {
          cadastroErro(error)
       });
-
-
-   // Redireciona pagina
-   // location.href = 'index.html';
 }
 
 /*  Ao obter o sucesso, recebe o json (token) do usuário*/
@@ -101,25 +97,11 @@ function cadastroSucesso(nome, sobrenome, email, jsonRecebido) {
    localStorage.setItem("user", JSON.stringify({ nome: nome, sobrenome: sobrenome, email: email, token: jsonRecebido }))
    alert("Usuário cadastrado com sucesso")
 
-   // e então redirecionamos para a pagina de tarefas;
-   window.location.href = "tarefas.html"
+   // Redireciona pagina inicial para login
+   location.href = 'index.html';
 }
 
 function cadastroErro(statusRecebido) {
    console.log("Erro ao cadastrar");
    console.log(statusRecebido)
 }
-
-
-/*
-let userList = JSON.parse(localStorage.getItem('userList') || '[]');
-    userList.push (
-      {
-        theName: theName.value,
-        nickname: nickname.value,
-        email: email.value.toLowerCase(),
-        password: password.value
-      }
-      )
-    localStorage.setItem('userList', JSON.stringify(userList))
-*/

@@ -8,3 +8,7 @@
 - Eduardo Russo
 
 [Exemplo](https://eversilverio.github.io/DH/FrontEnd_II/proj_integrador/index.html)
+
+### Login teste:
+> jonjon@gemail.com
+> js123456
