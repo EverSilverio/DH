@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "e4f5ce82-b3da-4d10-bcbd-e84b29295721",
+		"name": "Projeto_integrador_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Criar usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"Izabella\",\r\n  \"lastName\": \"Leite\",\r\n  \"email\": \"izabella.leite@digitalhouse.com\",\r\n  \"password\": \"aprendiapi\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ctd-todo-api.herokuapp.com/v1/users",
+					"protocol": "https",
+					"host": [
+						"ctd-todo-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logar no usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"izabellas.leite@digitalhouse.com\",\r\n  \"password\": \"aprendiapi\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ctd-todo-api.herokuapp.com/v1/users/login",
+					"protocol": "https",
+					"host": [
+						"ctd-todo-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"v1",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obter informação do usuario",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "criar tarefa",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Carregar Tarefa",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Iml6YWJlbGxhcy5sZWl0ZUBkaWdpdGFsaG91c2UuY29tIiwiaWQiOjE5NjEsImlhdCI6MTY0OTIwNzYzMH0.6xNCVnynGMW_clLf4QS-vL-kB-rRpcl4TATBaieaoNs",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://ctd-todo-api.herokuapp.com/v1/tasks/5363",
+					"protocol": "https",
+					"host": [
+						"ctd-todo-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"v1",
+						"tasks",
+						"5363"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar todas tarefas",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar tarefa",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://ctd-todo-api.herokuapp.com/v1/tasks/5363",
+					"protocol": "https",
+					"host": [
+						"ctd-todo-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"v1",
+						"tasks",
+						"5363"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Tarefa",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
