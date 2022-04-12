@@ -1,0 +1,162 @@
+Microsoft Windows [versão 10.0.19043.1586]
+(c) Microsoft Corporation. Todos os direitos reservados.
+
+C:\Users\msg4e>docker -v
+^C
+C:\Users\msg4e>docker version
+Client:
+ Cloud integration: v1.0.22
+ Version:           20.10.13
+ API version:       1.41
+ Go version:        go1.16.15
+ Git commit:        a224086
+ Built:             Thu Mar 10 14:13:04 2022
+ OS/Arch:           windows/amd64
+ Context:           default
+ Experimental:      true
+
+Server: Docker Desktop 4.6.1 (76265)
+ Engine:
+  Version:          20.10.13
+  API version:      1.41 (minimum version 1.12)
+  Go version:       go1.16.15
+  Git commit:       906f57f
+  Built:            Thu Mar 10 14:06:05 2022
+  OS/Arch:          linux/amd64
+  Experimental:     false
+ containerd:
+  Version:          1.5.10
+  GitCommit:        2a1d4dbdb2a1030dc5b01e96fb110a9d9f150ecc
+ runc:
+  Version:          1.0.3
+  GitCommit:        v1.0.3-0-gf46b6ba
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+
+C:\Users\msg4e>docker network create public
+8ec16056ce12da844c043fd9f2b6ecde802ff9a1944dbfeff45a3554a0902465
+
+C:\Users\msg4e>docker network create internal --internal
+fede8b113815d825a41235510f7b79650800f6288727894e497605bead79c259
+
+C:\Users\msg4e>docker network ls
+NETWORK ID     NAME       DRIVER    SCOPE
+599c7356ce60   bridge     bridge    local
+0920204c83a8   host       host      local
+fede8b113815   internal   bridge    local
+1517c6070ee8   none       null      local
+8ec16056ce12   public     bridge    local
+
+C:\Users\msg4e>docker run -d --name db --network internal -e MYSQL_ROOT_PASSWORD=my-secret-pw -e MYSQL_USER=wpuser -e MYSQL_PASSWORD=my-secret-pw -e MYSQL_DATABASE=wordpressdb -e WORDPRESS_TABLE_PREFIX=hj mysql:5.7
+Unable to find image 'mysql:5.7' locally
+5.7: Pulling from library/mysql
+f003217c5aae: Pull complete
+65d94f01a09f: Pull complete
+43d78aaa6078: Pull complete
+a0f91ffbdf69: Pull complete
+59ee9e07e12f: Pull complete
+04d82978082c: Pull complete
+70f46ebb971a: Pull complete
+ba61822c65c2: Pull complete
+dec59acdf78a: Pull complete
+0a05235a6981: Pull complete
+c87d621d6916: Pull complete
+Digest: sha256:1a73b6a8f507639a8f91ed01ace28965f4f74bb62a9d9b9e7378d5f07fab79dc
+Status: Downloaded newer image for mysql:5.7
+0459f05337b9e7148d4194f5d0699337e9e2db45a1094af89002174625bc526b
+
+C:\Users\msg4e>docker create -p 8081:80 --name web --network public -e WORDPRESS_DB_HOST=db:3306 -e WORDPRESS_DB_USER=wpuser -e WORDPRESS_DB_PASSWORD=my-secret-pw -e WORDPRESS_DB_NAME=wordpressdb -e WORDPRESS_TABLE_PREFIX=hj wordpress:latest
+Unable to find image 'wordpress:latest' locally
+latest: Pulling from library/wordpress
+c229119241af: Pull complete
+47e86af584f1: Pull complete
+e1bd55b3ae5f: Pull complete
+1f3a70af964a: Pull complete
+0f5086159710: Pull complete
+7d9c764dc190: Pull complete
+ec2bb7a6eead: Pull complete
+9d9132470f34: Pull complete
+fb23ab197126: Pull complete
+cbdd566be443: Pull complete
+be224cc1ae0f: Pull complete
+629912c3cae4: Pull complete
+f1bae9b2bf5b: Pull complete
+19542807523e: Pull complete
+59191c568fb8: Pull complete
+30be9b012597: Pull complete
+bb41528d36dd: Pull complete
+bfd3efbb7409: Pull complete
+54dd974e219d: Pull complete
+7db903775ab3: Pull complete
+ee9805e04450: Pull complete
+Digest: sha256:9006f58f205f51dee7616534297a0e54a1ab45b47636b9e22b59796fbee7cf6a
+Status: Downloaded newer image for wordpress:latest
+8c53ff1743bb49305e901b891b7cbc208e40cba38be8c9b4af99418106e3bbf7
+
+C:\Users\msg4e>docker network connect internal web
+
+C:\Users\msg4e>docker start web
+web
+
+C:\Users\msg4e>docker stop web
+web
+
+C:\Users\msg4e>docker stop db
+db
+
+C:\Users\msg4e>docker rm web
+web
+
+C:\Users\msg4e>docker rm db
+db
+
+C:\Users\msg4e>docker network rm public
+public
+
+C:\Users\msg4e>docker network rm internal
+internal
+
+C:\Users\msg4e>docker rmi mysql:5.7
+Untagged: mysql:5.7
+Untagged: mysql@sha256:1a73b6a8f507639a8f91ed01ace28965f4f74bb62a9d9b9e7378d5f07fab79dc
+Deleted: sha256:f26e21ddd20df245d88410116241f3eef1ec49ce888856c95b85081a7250183d
+Deleted: sha256:c607cd1716e1e3f52d37b391b9e48207c15b9de687c49539c42b7c7411b8a845
+Deleted: sha256:18d0239fa88c234ffcde52288f532ac4f69d052964d6605df32fb2e3a197bbf9
+Deleted: sha256:8d1d80a87e029e4729a56a87e38d54b9ef2ca1af404e13af1feadeba53745529
+Deleted: sha256:1ac7c17dadb8b439a4034925f290a2f9288068b4192669bed1a614c4057c0c1b
+Deleted: sha256:610784bcaae50e999566928bdec7a4e146fe075d9e487bde0a228c99013ff1d9
+Deleted: sha256:ccebaff04ea21a9e2df07f9d5af5c47ccd141cd3590f4d45784b6075e7c17ded
+Deleted: sha256:716203221cd982fc07b80efda0c53a759ecfd69b2d93d4e8adf5fa094351372e
+Deleted: sha256:fbd4939b3eb58642a07003e076acc3d0d8140797f61139ce4d3645790d9c8b51
+Deleted: sha256:88f8458b4b2030b229b9757bd4061bce58b65e831a0bba8fa71aa8b3f87db630
+Deleted: sha256:f2f431ab3ddc1460d300cd86016cc03b7611b56f04bd88370da3d378b3d10aea
+Deleted: sha256:c1065d45b8722a4385f2ee26116e1859e8083400ee00d2beff3fdd5225bfeee9
+
+C:\Users\msg4e>docker rmi wordpress:latest
+Untagged: wordpress:latest
+Untagged: wordpress@sha256:9006f58f205f51dee7616534297a0e54a1ab45b47636b9e22b59796fbee7cf6a
+Deleted: sha256:744143078625e43c0dc79075341bba0069aba2baf2767bcd98578cf1ce472fc5
+Deleted: sha256:1e508914dac6760015cfc807a1143381e8bbcefe1f18d8170bdf24aa827dcb8c
+Deleted: sha256:45916171aa9dcffc39dbde5c05c8b1a37f6b81c169788b6f5e76fcc717883fbb
+Deleted: sha256:8da2245bb12e303c6cc40196e77312ab3027c5821d248c976ea20ccfb7a1950b
+Deleted: sha256:67dabf685b42afdce4113d85797782e91374ef966c566ef8f1e280884e7eb822
+Deleted: sha256:6e33bb71d2f8e4981cbd7f8a4baad25f65a99b43d976d8c12720b961762d2e5e
+Deleted: sha256:f627c2dca426d61676d43da764dc092cb5a8d6f0acf5a4c86d42ee1a1829998b
+Deleted: sha256:618aee06858662b63f30cf7d7dd215d8ab1b3ea227600038f8ac780839ae11ce
+Deleted: sha256:54dbe6413d162b2099d773f260499134e4be1561cc0f96849c793195550f3ea2
+Deleted: sha256:d5c6e123ec3c5b9d2107ce2e744a09740a862b21e0a6cc82cadc46d992e26540
+Deleted: sha256:3e5856bfde553fc5d3a3c1e89c061ca5d6cd49e851038b255e37a47b0c8d3964
+Deleted: sha256:f3b5f38355e6cb795f0fdad8bedb03c4d390c2f996c7d65151ad7196c69f956a
+Deleted: sha256:aede23fda58d70d4c895832041553a6f97788c55fdbc95c8d352f9b679f95dd2
+Deleted: sha256:c44b6abd032943bb02b3de40885107ce624427781c4178d1c7e00e3a203407a0
+Deleted: sha256:c1835020863ada1088ae78621a6e9042a5d8742aceb7089a7c1559c3d35ede9d
+Deleted: sha256:4d77604c83bb258658aeadb22fbef6528a3a2e8ef2e860d5f872825d98ec541a
+Deleted: sha256:b3712a696dc582bf55d4b4f5c2e69ed9a140f9262a4ee9a5a52aa53dfb77a26f
+Deleted: sha256:523459101fe0f39095398db152287096203ec0c5ad9832818832bc74244fe0b9
+Deleted: sha256:e5fe0baec35f2b4c47e1ebc0a343b1c1374617914f6dde5dfc32541438b6dc73
+Deleted: sha256:49a6f50200d0f210f520024fce90bfc1b18d45983c7edc936217fb66c99e0c92
+Deleted: sha256:801a53fd25eaa3144c32d2bbbb49fd99da6cd4db041db400fd59c071f8016a54
+Deleted: sha256:608f3a074261105f129d707e4d9ad3d41b5baa94887f092b7c2857f7274a2fce
+
+C:\Users\msg4e>

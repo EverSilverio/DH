@@ -10,8 +10,6 @@ function entrar(ev) {
    let pass = inputPassword.value
 
    if (regexMail.test(email)) {
-      localStorage.setItem('login', JSON.stringify({ email: email }));
-
       const data = {
          email: email,
          password: pass,
@@ -33,6 +31,8 @@ function entrar(ev) {
             throw response;
          })
          .then(info => {
+            localStorage.setItem('login', JSON.stringify({ email: email, jwt: info.jwt }));
+
             console.log(info)
             alert("Login efetuado com sucesso!")
             location.href = 'tarefas.html';
