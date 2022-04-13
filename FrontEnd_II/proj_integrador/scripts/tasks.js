@@ -113,7 +113,8 @@ window.onload = function() {
                // throw response;
          })
          .then(res => {
-            console.log(res);
+            // listar as tarefas
+            carregaTarefas();
          })
          .catch(err => {
             console.log(err);
@@ -124,7 +125,7 @@ window.onload = function() {
    // obtem usuario
    carregaUsuario();
 
-   // lista as tarefas
+   // listar as tarefas
    carregaTarefas();
 
    // adiciona evento de criar ao tarefa ao botan "+"
