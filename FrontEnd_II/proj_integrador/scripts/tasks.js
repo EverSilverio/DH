@@ -2,12 +2,31 @@ const urlGetUser = 'https://ctd-todo-api.herokuapp.com/v1/users/getMe';
 const urlTasks = 'https://ctd-todo-api.herokuapp.com/v1/tasks?';
 const jwt = JSON.parse(localStorage.getItem('login')).jwt;
 
+// metodo handle status tarefa
+function alteraStatus(btn, status) {
+   console.log(btn.querySelector('i').getAttribute('id'));
+   // const data = {
+   //    description: novaTarefa.value,
+   //    completed: false
+   // };
+
+   // const settings = {
+   //    method: 'POST',
+   //    headers: {
+   //       'content-type': 'application/json',
+   //       Authorization: jwt
+   //    },
+   //    body: JSON.stringify(data)
+   // };
+}
+
 window.onload = function() {
    const novaTarefa = document.getElementById('novaTarea');
    const formNovaTarefa = document.querySelector('.nova-tarefa')
    const userinfo = document.querySelector('.user-info p');
    const skeleton = document.getElementById('skeleton');
    const tarefasPendentes = document.querySelector('.tarefas-pendentes');
+   const tarefasTerminadas = document.querySelector('.tarefas-terminadas');
 
    // metodo para obter nome do usuario
    const carregaUsuario = function() {
@@ -59,7 +78,7 @@ window.onload = function() {
          .then(tasks => {
             console.log(tasks);
             tasks.forEach(task => {
-               montaTarefas(task.description, task.createdAt);
+               montaTarefas(task);
             });
          })
          .catch(err => {
@@ -69,24 +88,63 @@ window.onload = function() {
    }
 
    // monta tarefas na tela
-   const montaTarefas = function(tarefa, timestamp) {
+   const montaTarefas = function(task) {
       // remove visualização do skeleton
       skeleton.style.display = 'none';
 
-      tarefasPendentes.innerHTML += templateTarefa(tarefa, timestamp);
+      let date = new Date(task.createdAt);
+      date.toLocaleDateString('pt-BR');
+
+      // console.log(date.getFullYear());
+      date = date.getDate() +
+         "/" + (date.getMonth() + 1) +
+         "/" + date.getFullYear();
+
+      if (task.completed) {
+         tarefasTerminadas.innerHTML += templateTarefa(task, date);
+         let elementoCriado = document.querySelector(`#id${task.id} .descricao div button`);
+
+         elementoCriado.addEventListener('click', function(ev) {
+            console.log('click');
+         })
+
+         console.log(elementoCriado);
+
+      } else {
+         tarefasPendentes.innerHTML += templateTarefa(task, date);
+      }
    }
 
    // retorna template tarefa
-   const templateTarefa = function(tarefa, timestamp) {
-      return `
+   const templateTarefa = function(task, date) {
+      let template = '';
+
+      if (task.completed) {
+         template = `
+         <li class="tarefa" id="id${task.id}">
+            <div class="done"></div>
+            <div class="descricao">
+            <p class="nome">${task.description}</p>
+            <div>
+               <button ><i class="fas fa-undo-alt change"></i></button>
+               <button><i class="far fa-trash-alt"></i></button>
+            </div>
+            </div>
+         </li>
+         `;
+      } else {
+         template = `
          <li class="tarefa">
             <div class="not-done"></div>
             <div class="descricao">
-               <p class="nome">${tarefa}</p>
-               <p class="timestamp">Criada em: ${timestamp}</p>
+               <p class="nome">${task.description}</p>
+               <p class="timestamp">Criada em: ${date}</p>
             </div>
          </li>      
       `;
+      }
+
+      return template;
    }
 
    // metodo para criar nova tarefa
@@ -114,7 +172,11 @@ window.onload = function() {
          })
          .then(res => {
             // listar as tarefas
+            tarefasPendentes.innerHTML = '';
+            tarefasTerminadas.innerHTML = '';
+
             carregaTarefas();
+            novaTarefa.value = '';
          })
          .catch(err => {
             console.log(err);
