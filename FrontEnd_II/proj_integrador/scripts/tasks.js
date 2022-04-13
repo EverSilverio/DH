@@ -6,6 +6,8 @@ window.onload = function() {
    const novaTarefa = document.getElementById('novaTarea');
    const formNovaTarefa = document.querySelector('.nova-tarefa')
    const userinfo = document.querySelector('.user-info p');
+   const skeleton = document.getElementById('skeleton');
+   const tarefasPendentes = document.querySelector('.tarefas-pendentes');
 
    // metodo para obter nome do usuario
    const carregaUsuario = function() {
@@ -54,13 +56,37 @@ window.onload = function() {
                // }
                // throw response;
          })
-         .then(res => {
-            console.log(res);
+         .then(tasks => {
+            console.log(tasks);
+            tasks.forEach(task => {
+               montaTarefas(task.description, task.createdAt);
+            });
          })
          .catch(err => {
             console.log(err);
             alert("Falha no login!")
          });
+   }
+
+   // monta tarefas na tela
+   const montaTarefas = function(tarefa, timestamp) {
+      // remove visualização do skeleton
+      skeleton.style.display = 'none';
+
+      tarefasPendentes.innerHTML += templateTarefa(tarefa, timestamp);
+   }
+
+   // retorna template tarefa
+   const templateTarefa = function(tarefa, timestamp) {
+      return `
+         <li class="tarefa">
+            <div class="not-done"></div>
+            <div class="descricao">
+               <p class="nome">${tarefa}</p>
+               <p class="timestamp">Criada em: ${timestamp}</p>
+            </div>
+         </li>      
+      `;
    }
 
    // metodo para criar nova tarefa
